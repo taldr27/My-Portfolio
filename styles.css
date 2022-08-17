@@ -3,12 +3,12 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-image: url(/img/background.svg);
 }
 
 a {
-  font-weight: 100;
-  letter-spacing: 2px;
+  font-size: 12px;
+  letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -16,8 +16,8 @@ a {
 
 .header ul {  
   list-style: none;
-  margin: 10px;
-  padding: 24px;
+  margin: 32px;
+  padding: 10px;
   display: flex;
 }
 
@@ -25,6 +25,18 @@ a {
   flex-grow: 1;
   text-align: right;
   align-self: center;
+}
+
+.content p {
+  text-align: center;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.content .description {
+  font-size: 20px;
+  padding: 24px;
+  text-align: center;
 }
 
 
