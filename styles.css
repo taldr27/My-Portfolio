@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+a {
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.header ul {  
+  list-style: none;
+  margin: 10px;
+  padding: 24px;
+  display: flex;
+}
+
+.header .toggle-menu {
+  flex-grow: 1;
+  text-align: right;
+  align-self: center;
+}
+
+
