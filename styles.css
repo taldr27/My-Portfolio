@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
 }
-@font-face {
+
+/* @font-face {
   font-family: 'Inter';
   src: url('../fonts/inter-v12-latin-regular.eot');
-}
+} */
 
 a {
   font-size: 12px;
@@ -59,7 +60,7 @@ a {
 
 .content .car {
   color: #36b37e;
-  font-family: 'Inter';
+  /* font-family: 'Inter'; */
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
