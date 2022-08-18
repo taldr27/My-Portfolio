@@ -59,7 +59,7 @@ a {
 }
 
 .content .car {
-  color: #36b37e;/* font-family: 'Inter'; */
+  color: #36b37e;
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
@@ -145,7 +145,7 @@ a {
   font-size: 24px;
   line-height: 32px;
   margin: 16px 16px 16px 16px;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .projects-container .button {
@@ -158,7 +158,6 @@ a {
   font-size: 17px;
   line-height: 117%;
   margin: 29px 103px 24px 103px;
-  cursor: pointer;
 }
 
 .content .lang-container {
@@ -170,19 +169,26 @@ a {
 .content .skills-box {
   border: 2px solid #D0D9D4;
   border-radius: 5px;
+  background-color: #EBF0EE;
 }
 
 .lang-container a {
-  color:#3A4A42;
+  color: #36b37e;
   margin: 6px;
   padding: 9px;
   width: max-content;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
-  background-color: #EBF0EE;
+  background-color: white;
   border-radius: 5px;
   font-weight: 600;
+}
+
+.lang-container img {
+  width: 150px;
+  height: 150px;
+  object-position: 0 25px ;
 }
 
 .lang-container ul {
@@ -191,5 +197,22 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #EBF0EE;
+  margin: 24px 30px 24px 30px;
+}
+
+.about .button {
+  background-color: #36b37e;
+  border-radius: 7px;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 117%;
+  margin: 29px 103px 24px 103px;
+}
+
+.content input:hover {
+  background-color: #008552;
 }
