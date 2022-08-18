@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/inter-v12-latin-regular.eot');
+}
 
 a {
   font-size: 12px;
@@ -36,7 +40,7 @@ a {
 }
 
 .content {
-  background-image: url(../img/background.svg);
+  background-image: url('../img/background.svg');
   padding-top: 34px;
   text-align: center;
   display: flex;
@@ -45,12 +49,12 @@ a {
 
 .content .name {
   color: #172b4d;
-  font-family: 'Inter';
+  font-family: Inter;
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
   line-height: 107%;
-  margin: 30px 0px 20px 0px;
+  margin: 30px 0 20px 0;
 }
 
 .content .car {
@@ -60,7 +64,7 @@ a {
   font-weight: bold;
   line-height: 52px;
   line-height: 107%;
-  margin: 0px 0px 30px 0px;
+  margin: 0 0 30px;
 }
 
 .content .description {
@@ -77,12 +81,12 @@ a {
   justify-content: center;
   list-style: none;
   align-items: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .content a {
-  margin: 0px 10px 0px 12px;
+  margin: 0 10px 0 12px;
   display: block;
   width: 100%;
   align-content: center;
