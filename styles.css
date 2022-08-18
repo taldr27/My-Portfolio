@@ -42,6 +42,7 @@ a {
 
 .content {
   background-image: url('../img/background.svg');
+  background-repeat: no-repeat;
   padding-top: 34px;/* font-family: 'Inter'; */
   text-align: center;
   display: flex;
@@ -99,13 +100,65 @@ a {
 
 .content .projects-container {
   display: inline-grid;
-  text-align: center;
+  margin: 68px 0;
+  row-gap: 24px;
+}
+
+.content .project-box {
+  border: 2px solid #D0D9D4;
+  border-radius: 5px;
+}
+
+.projects-container .project-details {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
 }
 
 .projects-container a {
-  color:#36b37e;
+  color:#3A4A42;
+  margin: 6px;
+  padding: 9px;
+  width: max-content;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #EBF0EE;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 .projects-container div {
-  border: 1px solid black;
+  border: 1px #EBF0EE;
+  text-align: center;
 }
+
+.projects-container img {
+  width: 100%;
+}
+
+.projects-container h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 16px 16px 16px 16px;
+  font-weight: bolder;
+}
+
+.projects-container .button {
+  background-color: #36b37e;
+  border-radius: 7px;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 117%;
+  margin: 29px 103px 24px 103px;
+  cursor: pointer;
+}
+
+
