@@ -42,7 +42,7 @@ a {
 
 .content {
   background-image: url('../img/background.svg');
-  padding-top: 34px;
+  padding-top: 34px;/* font-family: 'Inter'; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,6 @@ a {
 
 .content .name {
   color: #172b4d;
-  font-family: Inter;
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
@@ -59,8 +58,7 @@ a {
 }
 
 .content .car {
-  color: #36b37e;
-  /* font-family: 'Inter'; */
+  color: #36b37e;/* font-family: 'Inter'; */
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
