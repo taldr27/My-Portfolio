@@ -43,7 +43,7 @@ a {
 .content {
   background-image: url('../img/background.svg');
   background-repeat: no-repeat;
-  padding-top: 34px;/* font-family: 'Inter'; */
+  padding-top: 34px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@ a {
 }
 
 .content .project-box {
-  border: 2px solid #D0D9D4;
+  border: 2px solid #d0d9d4;
   border-radius: 5px;
 }
 
@@ -116,18 +116,18 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .projects-container a {
-  color:#3A4A42;
+  color: #3a4a42;
   margin: 6px;
   padding: 9px;
   width: max-content;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   border-radius: 5px;
   font-weight: 600;
 }
@@ -167,9 +167,9 @@ a {
 }
 
 .content .skills-box {
-  border: 2px solid #D0D9D4;
+  border: 2px solid #d0d9d4;
   border-radius: 5px;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
 }
 
 .lang-container a {
@@ -188,7 +188,7 @@ a {
 .lang-container img {
   width: 150px;
   height: 150px;
-  object-position: 0 25px ;
+  object-position: 0 25px;
 }
 
 .lang-container ul {
@@ -197,7 +197,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #EBF0EE;
+  background-color: #ebf0ee;
   margin: 24px 30px 24px 30px;
 }
 
