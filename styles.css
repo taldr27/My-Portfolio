@@ -161,4 +161,35 @@ a {
   cursor: pointer;
 }
 
+.content .lang-container {
+  display: inline-grid;
+  margin: 59px 0;
+  row-gap: 54px;
+}
 
+.content .skills-box {
+  border: 2px solid #D0D9D4;
+  border-radius: 5px;
+}
+
+.lang-container a {
+  color:#3A4A42;
+  margin: 6px;
+  padding: 9px;
+  width: max-content;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #EBF0EE;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.lang-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
