@@ -41,7 +41,7 @@ a {
 }
 
 .content {
-  background-image: url('../img/background.svg');
+  background-image: url('../../img/background.svg');
   background-repeat: no-repeat;
   padding-top: 34px;
   text-align: center;
@@ -72,6 +72,7 @@ a {
   padding: 24px;
   padding-top: 10px;
   padding-bottom: 15px;
+  color: #172b4d;
   margin: 0;
   font-weight: lighter;
 }
@@ -86,7 +87,7 @@ a {
 }
 
 .content a {
-  margin: 0 10px 0 12px;
+  margin: 25px 10px 0 12px;
   display: block;
   width: 100%;
   align-content: center;
@@ -102,6 +103,15 @@ a {
   display: inline-grid;
   margin: 68px 0;
   row-gap: 24px;
+}
+
+.content h2 {
+  color: #172b4d;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 107%;
+  margin: 30px 0 20px 0;
+  text-align: center;
 }
 
 .content .project-box {
@@ -158,6 +168,19 @@ a {
   font-size: 17px;
   line-height: 117%;
   margin: 29px 103px 24px 103px;
+  border: none;
+}
+
+.about {
+  background-image: url('../../img/backgroundabout.svg');
+  background-repeat: no-repeat;
+}
+
+.about h3 {
+  color: #172b4d;
+  text-align: center;
+  font-weight: 400;
+  margin: 24px 15px 1px;
 }
 
 .content .lang-container {
@@ -211,8 +234,9 @@ a {
   font-size: 17px;
   line-height: 117%;
   margin: 29px 103px 24px 103px;
+  border: none;
 }
 
-.content input:hover {
+.content button:hover {
   background-color: #008552;
 }
