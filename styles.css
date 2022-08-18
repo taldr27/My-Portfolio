@@ -96,3 +96,16 @@ a {
   flex-direction: column;
   align-content: center;
 }
+
+.content .projects-container {
+  display: inline-grid;
+  text-align: center;
+}
+
+.projects-container a {
+  color:#36b37e;
+}
+
+.projects-container div {
+  border: 1px solid black;
+}
