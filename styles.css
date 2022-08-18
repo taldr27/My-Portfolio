@@ -4,7 +4,7 @@
 
 body {
   background-position: 0cm 1.5cm;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-image: url(/img/background.svg);
 }
 
@@ -24,7 +24,7 @@ a {
   align-items: center;
 }
 
-.header li{  
+.header li {
   flex: 4;
 }
 
@@ -35,7 +35,7 @@ a {
   text-align: left;
 }
 
-.header .toggle-menu{
+.header .toggle-menu {
   display: block;
   flex: 1;
   flex-grow: 1;
@@ -56,6 +56,14 @@ a {
   line-height: 30px;
 }
 
+.content .name {
+  color: #172B4D;
+}
+
+.content .car {
+  color: #36B37E";
+}
+
 .content .description {
   font-size: 20px;
   padding: 24px;
@@ -63,16 +71,14 @@ a {
   font-weight: lighter;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: center;
 }
 
 .footer img {    
-
   width: 40px;
   height: 20px;
-
 }
 
 .wrapper {
@@ -80,4 +86,3 @@ a {
   flex-direction: column;
   align-content: center;
 }
-
