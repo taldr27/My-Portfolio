@@ -105,6 +105,12 @@ a {
   row-gap: 24px;
 }
 
+.my-recent-works .line {
+  width: 50px;
+  border-radius: none;
+  margin: 0px 12px 13px 14px;
+}
+
 .content h2 {
   color: #172b4d;
   font-size: 45px;
@@ -172,15 +178,19 @@ a {
 }
 
 .about {
-  background-image: url('../../img/backgroundabout.svg');
+  background-image: url('../../img/backgroundabout.svg'), url('../../img/backgroundabout2.svg');
+  background-position: top left, top right;
   background-repeat: no-repeat;
 }
 
 .about h3 {
   color: #172b4d;
   text-align: center;
-  font-weight: 400;
+  font-weight: 350;
   margin: 24px 15px 1px;
+  font-style:normal;
+  line-height: 32px;
+  vertical-align: top;
 }
 
 .content .lang-container {
