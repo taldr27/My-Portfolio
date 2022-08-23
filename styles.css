@@ -12,7 +12,8 @@ a {
 
 .header {
   list-style: none;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
   padding: 0;
   display: flex; /* - */
   flex-direction: row;
@@ -35,11 +36,15 @@ a {
   align-self: center;
 }
 
-.content {
+.land-page {
   background-image: url("./img/background.svg");
   background-repeat: no-repeat;
+  background-position: left -30px;
+  background-size: cover;
+}
+
+.content {
   font-family: "Inter";
-  padding-top: 34px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -183,8 +188,7 @@ a {
 }
 
 .about {
-  background-image: url("../../img/backgroundabout.svg"),
-    url("../../img/backgroundabout2.svg");
+  background-image: url("../../img/backgroundabout.svg"), url("../../img/backgroundabout2.svg");
   background-position: top left, top right;
   background-repeat: no-repeat;
 }
@@ -299,6 +303,13 @@ a {
   border: 1.5px solid lightgray;
 }
 
+.contact-form textarea {
+  outline: none;
+  padding: 12px;
+  border: 1.5px solid lightgray;
+  border-radius: 0.25em;
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -320,23 +331,16 @@ a {
 }
 
 .buttom-contact-form:hover {
-  background-color: #36B37F;
+  background-color: #36b37f;
 }
 
 .buttom-contact-form:focus {
   background-color: #008552;
 }
 
-.contact-form textarea {
-  outline: none;
-  padding: 12px;
-  border: 1.5px solid lightgray;
-  border-radius: 0.25em;
-}
-
 .contact .email-address {
   font-size: 20px;
-  color:  #42526E;
+  color: #42526e;
 }
 
 .div-contact {
