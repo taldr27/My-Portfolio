@@ -279,9 +279,15 @@ a {
   padding: 60px 24px 58px 24px;
 }
 
-.contact .contactform {
+.contact .contact-form {
   display: flex;
-  background-color: red;
   flex-direction: column;
   gap: 1em;
+  padding-inline: 2em;
+}
+
+.contact-form input {
+  padding: 0.9em;
+  border-radius: 0.25em;
+  border: 1.5px solid lightgray;
 }
