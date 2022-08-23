@@ -295,6 +295,12 @@ a {
   border: 1.5px solid lightgray;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1.5px solid #36b37e;
+}
+
 .buttom-contact-form {
   background-color: #36b37e;
   border-radius: 7px;
@@ -318,6 +324,8 @@ a {
 }
 
 .contact-form textarea {
+  outline: none;
   padding: 12px;
   border: 1.5px solid lightgray;
+  border-radius: 0.25em;
 }
