@@ -14,7 +14,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;/* - */
+  display: flex; /* - */
   flex-direction: row;
   align-items: center;
 }
@@ -36,9 +36,9 @@ a {
 }
 
 .content {
-  background-image: url('../../img/background.svg');
+  background-image: url("../../img/background.svg");
   background-repeat: no-repeat;
-  font-family: 'Inter';
+  font-family: "Inter";
   padding-top: 34px;
   text-align: center;
   display: flex;
@@ -73,7 +73,8 @@ a {
   font-weight: lighter;
 }
 
-.content .social {/* - */
+.content .social {
+  /* - */
   display: flex;
   justify-content: center;
   list-style: none;
@@ -159,7 +160,8 @@ a {
   font-weight: 600;
 }
 
-.project-details ul {/* - */
+.project-details ul {
+  /* - */
   display: flex;
   justify-content: center;
   list-style: none;
@@ -182,7 +184,8 @@ a {
 }
 
 .about {
-  background-image: url('../../img/backgroundabout.svg'), url('../../img/backgroundabout2.svg');
+  background-image: url("../../img/backgroundabout.svg"),
+    url("../../img/backgroundabout2.svg");
   background-position: top left, top right;
   background-repeat: no-repeat;
 }
@@ -282,8 +285,8 @@ a {
 .contact .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  padding-inline: 2em;
+  gap: 1.4em;
+  padding-inline: 1em;
 }
 
 .contact-form input {
@@ -292,7 +295,7 @@ a {
   border: 1.5px solid lightgray;
 }
 
-.buttom-contact-form{
+.buttom-contact-form {
   background-color: #36b37e;
   border-radius: 7px;
   color: white;
@@ -308,5 +311,6 @@ a {
 }
 
 .contact-form textarea {
- padding: 12px;
+  padding: 12px;
+  border: 1.5px solid lightgray;
 }
