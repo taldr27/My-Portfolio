@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/inter-v12-latin-regular.eot');
-} */
-
 a {
   font-size: 12px;
   letter-spacing: 1px;
@@ -43,6 +38,7 @@ a {
 .content {
   background-image: url('../../img/background.svg');
   background-repeat: no-repeat;
+  font-family: 'Inter';
   padding-top: 34px;
   text-align: center;
   display: flex;
@@ -107,7 +103,6 @@ a {
 
 .my-recent-works .line {
   width: 50px;
-  border-radius: none;
   margin: 0 12px 13px 14px;
 }
 
@@ -129,7 +124,7 @@ a {
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -192,10 +187,24 @@ a {
   background-repeat: no-repeat;
 }
 
-.about h3 {
+.about .main-about {
   color: #172b4d;
   text-align: center;
-  font-weight: 350;
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  padding: 12px 12px 10px 12px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  vertical-align: top;
+}
+
+.lang-container h3 {
+  color: #172b4d;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
   margin: 24px 15px 1px;
   font-style: normal;
   line-height: 32px;
@@ -265,5 +274,7 @@ a {
 .contact .name {
   margin: 0;
   font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
   padding: 60px 24px 58px 24px;
 }
