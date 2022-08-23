@@ -36,7 +36,7 @@ a {
 }
 
 .content {
-  background-image: url("../../img/background.svg");
+  background-image: url("./img/background.svg");
   background-repeat: no-repeat;
   font-family: "Inter";
   padding-top: 34px;
