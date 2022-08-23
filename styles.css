@@ -13,9 +13,9 @@ a {
 .header {
   list-style: none;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   padding: 0;
-  display: flex; /* - */
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
@@ -39,15 +39,20 @@ a {
 .land-page {
   background-image: url("./img/background.svg");
   background-repeat: no-repeat;
-  background-position: left -30px;
+  background-position: left 5px top 0;
   background-size: cover;
+  padding: 10px;
 }
 
 .content {
-  font-family: "Inter";
+  font-family: "Inter", var(--font);
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.land-container {
+  padding: 30px;
 }
 
 .content .name {
@@ -70,8 +75,6 @@ a {
 
 .content .description {
   font-size: 20px;
-  padding: 24px;
-  padding-top: 10px;
   padding-bottom: 15px;
   color: #172b4d;
   margin: 0;
