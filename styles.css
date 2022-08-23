@@ -84,7 +84,7 @@ a {
 }
 
 .content a {
-  margin: 25px 10px 0 12px;
+  margin: 25px 6px 0 12px;
   display: block;
   width: 100%;
   align-content: center;
@@ -287,6 +287,7 @@ a {
   flex-direction: column;
   gap: 1.4em;
   padding-inline: 1em;
+  margin-bottom: 2em;
 }
 
 .contact-form input {
