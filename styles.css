@@ -278,3 +278,10 @@ a {
   line-height: 52px;
   padding: 60px 24px 58px 24px;
 }
+
+.contact .contactform {
+  display: flex;
+  background-color: red;
+  flex-direction: column;
+  gap: 1em;
+}
