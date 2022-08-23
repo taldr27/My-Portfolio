@@ -304,10 +304,17 @@ a {
   display: inline-block;
   font-size: 17px;
   line-height: 117%;
-  margin: 29px 103px 24px 103px;
+  margin-inline: auto;
   border: none;
   width: 129px;
-  padding: 12px;
+}
+
+.buttom-contact-form:hover {
+  background-color: #36B37F;
+}
+
+.buttom-contact-form:focus {
+  background-color: #008552;
 }
 
 .contact-form textarea {
