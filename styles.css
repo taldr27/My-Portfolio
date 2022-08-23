@@ -291,3 +291,22 @@ a {
   border-radius: 0.25em;
   border: 1.5px solid lightgray;
 }
+
+.buttom-contact-form{
+  background-color: #36b37e;
+  border-radius: 7px;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 117%;
+  margin: 29px 103px 24px 103px;
+  border: none;
+  width: 129px;
+  padding: 12px;
+}
+
+.form textarea {
+ padding: 12px;
+}
