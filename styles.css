@@ -274,6 +274,10 @@ a {
   background-color: #008552;
 }
 
+.contact {
+  padding-bottom: 14em;
+}
+
 .contact .name {
   margin: 0;
   font-size: 40px;
@@ -329,4 +333,9 @@ a {
   padding: 12px;
   border: 1.5px solid lightgray;
   border-radius: 0.25em;
+}
+
+.email-address {
+  font-size: 20px;
+  color:  #42526E;
 }
