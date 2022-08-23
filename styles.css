@@ -86,7 +86,6 @@ a {
 .content a {
   margin: 25px 6px 0 12px;
   display: block;
-  width: 100%;
   align-content: center;
 }
 
@@ -275,7 +274,7 @@ a {
 }
 
 .contact {
-  padding-bottom: 14em;
+  padding-bottom: 16em;
 }
 
 .contact .name {
@@ -335,7 +334,13 @@ a {
   border-radius: 0.25em;
 }
 
-.email-address {
+.contact .email-address {
   font-size: 20px;
   color:  #42526E;
+}
+
+.div-contact {
+  background-image: url("../img/backgroundcontact.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
