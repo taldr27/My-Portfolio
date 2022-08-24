@@ -1,68 +1,59 @@
 * {
   box-sizing: border-box;
-}
-
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
-
-a {
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .header {
-  list-style: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 0;
+  margin-top: 3em;
+  margin-bottom: 0.6em;
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
-.header a {
-  display: block;
-  width: 100%;
-  padding-left: 24px;
-  text-align: left;
+.welcome {
+  color: #28352f;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding-inline: 4em;
 }
 
 .header .toggle-menu {
-  display: block;
-  flex: 1;
-  flex-grow: 1;
-  padding-right: 25px;
-  text-align: right;
+  padding-inline: 9em;
   align-self: center;
 }
+
+/* Land Page Styles */
 
 .land-page {
   background-image: url("./img/background.svg");
   background-repeat: no-repeat;
-  background-position: left 5px top 0;
   background-size: cover;
-  padding: 10px;
+  padding: 0.4em;
+  margin-bottom: 0.1em;
+  padding-bottom: 3.6em;
+}
+
+@media (min-width: 768px) {
+  .land-page {
+    background-image: url('/img/background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .content {
-  font-family: 'Inter', var(--font);
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .land-container {
   padding: 30px;
 }
 
-.content .name {
+.content .main-text {
   color: #172b4d;
   font-size: 40px;
   font-weight: 700;
@@ -71,7 +62,7 @@ a {
   margin: 30px 0 20px 0;
 }
 
-.content .car {
+.content .main2 {
   color: #36b37e;
   font-size: 40px;
   font-weight: 700;
@@ -104,29 +95,25 @@ a {
   align-content: center;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
+/* My projects section styles */
 
 .content .projects-container {
   display: inline-grid;
-  margin: 68px 0;
-  row-gap: 24px;
+  padding-inline: 0.6em;
+  margin-top: 3em;
+  gap: 24px;
 }
 
 .my-recent-works .line {
-  width: 50px;
-  margin: 0 12px 13px 14px;
+  width: 4em;
 }
 
-.content h2 {
+.projects h2 {
   color: #172b4d;
   font-size: 45px;
   font-weight: bold;
   line-height: 107%;
-  margin: 30px 0 20px 0;
+  padding-inline: 1em;
   text-align: center;
 }
 
@@ -156,11 +143,9 @@ a {
   background-color: #ebf0ee;
   border-radius: 5px;
   font-weight: 600;
-}
-
-.projects-container div {
-  border: 1px #ebf0ee;
-  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .projects-container img {
@@ -197,10 +182,22 @@ a {
   border: none;
 }
 
+/* About section styles */
+
 .about {
   background-image: url("img/backgroundabout.svg"), url("img/backgroundabout2.svg");
   background-position: top left, top right;
   background-repeat: no-repeat;
+}
+
+.about .name {
+  padding-top: 1em;
+  color: #172b4d;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 107%;
+  padding-inline: 1em;
+  text-align: center;
 }
 
 .about .main-about {
@@ -229,8 +226,10 @@ a {
 
 .content .lang-container {
   display: inline-grid;
-  margin: 59px 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
   row-gap: 54px;
+  padding-inline: 0.6em;
 }
 
 .content .skills-box {
@@ -250,6 +249,7 @@ a {
   background-color: white;
   border-radius: 5px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .lang-container img {
@@ -286,6 +286,8 @@ a {
 .content button:hover {
   background-color: #008552;
 }
+
+/* Contact section styles */
 
 .contact {
   padding-bottom: 16em;
