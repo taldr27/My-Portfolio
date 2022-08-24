@@ -14,6 +14,7 @@
   margin-top: 3em;
   margin-bottom: 0.6em;
   display: flex;
+  justify-content: space-between;
 }
 
 .welcome {
@@ -28,7 +29,7 @@
 
 .header .toggle-menu {
   align-self: center;
-  padding-left: 8em;
+  margin-right: 3em;
 }
 
 /* Land Page Styles */
@@ -43,22 +44,6 @@
   padding: 0.4em;
   margin-bottom: 0.1em;
   padding-bottom: 3.6em;
-}
-
-@media (min-width: 768px) {
-  .land-page {
-    background-image: url('/img/background-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.content {
-  text-align: center;
-}
-
-.land-container {
-  padding: 30px;
 }
 
 .content .main-text {
@@ -85,6 +70,72 @@
   color: #172b4d;
   margin: 0;
   font-weight: lighter;
+}
+
+.land-container {
+  padding: 30px;
+}
+
+.disabled {
+  padding-top: 4em;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  .land-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50em;
+    background-image: url('/img/background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    margin-bottom: 5em;
+  }
+
+  .p1 {
+    padding: 10px;
+  }
+
+  .content .main-text {
+    color: #172b4d;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 103%;
+    margin: 30px 0 10px 0;
+  }
+
+  .content .main2 {
+    color: #36b37e;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 103%;
+    margin: 0 0 10px;
+  }
+
+  .content .description {
+    font-size: 20px;
+    line-height: 32px;
+    padding-inline: 12em;
+    color: #172b4d;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .land-container {
+    padding-bottom: 6em;
+  }
+}
+
+.content {
+  text-align: center;
+  position: relative;
 }
 
 .content .social {
