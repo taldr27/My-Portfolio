@@ -191,7 +191,7 @@ a {
 }
 
 .about {
-  background-image: url("./img/backgroundabout.svg"), url("./img/backgroundabout2.svg");
+  background-image: url("/img/backgroundabout.svg"), url("img/backgroundabout2.svg");
   background-position: top left, top right;
   background-repeat: no-repeat;
 }
@@ -347,7 +347,7 @@ a {
 }
 
 .div-contact {
-  background-image: url("./img/backgroundcontact.svg");
+  background-image: url("/img/backgroundcontact.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
