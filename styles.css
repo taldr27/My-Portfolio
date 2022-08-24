@@ -5,6 +5,11 @@
   font-family: 'Inter', sans-serif;
 }
 
+.wrapper {
+  width: 100%;
+  display: inline-grid;
+}
+
 .header {
   margin-top: 3em;
   margin-bottom: 0.6em;
@@ -22,13 +27,16 @@
 }
 
 .header .toggle-menu {
-  padding-inline: 9em;
   align-self: center;
+  padding-left: 8em;
 }
 
 /* Land Page Styles */
 
 .land-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-image: url("./img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +113,8 @@
 }
 
 .my-recent-works .line {
-  width: 4em;
+  margin-top: 2em;
+  width: 3.5em;
 }
 
 .projects h2 {
