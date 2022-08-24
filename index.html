@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
     
@@ -21,29 +22,34 @@
         </header>
     
     <section class="content">
-        <div class="p1">
-            <h2 class="name">Hey there. I'm Diego</h2>
-            <h2 class="car">I'm a software developer</h2>
-        </div>
-        <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-            don’t hestiate to contact me.</p>
-        <ul class="social">
-            <li>
-                <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg" /></a>
-            </li>
-            <li>
-                <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg" /></a>
-            </li>
-            <li>
-                <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg" /></a>
-            </li>
-            <li>
-                <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg" /></a>
-            </li>
-            <li>
-                <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg" /></a>
-            </li>
-        </ul>
+        <section class="land-page">
+            <div class="land-container">
+                <div class="p1">
+                    <h2 class="name">Hey there. I'm Diego</h2>
+                    <h2 class="car">I'm a software developer</h2>
+                </div>
+                <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.</p>
+                <ul class="social">
+                    <li>
+                        <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg" /></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
         
         <section class="my-recent-works">
             <br><br>
@@ -125,7 +131,7 @@
 
         <section class="about">
             <p class="name">About me</p>
-            <h3> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+            <h3 class="main-about"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.</h3>
 
             <button class="button">Get My Resume</button>
@@ -163,20 +169,41 @@
                             <li><a href="#">Terminal</a></li>
                         </ul>
                 </div>
-                
-
             </section>
 
         </section>
 
-
-
-
+        <section class="contact">
+            <p class="name">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            <div class="div-contact">
+                <form class="contact-form" action="https://formspree.io/f/xayknejl" method="post">
+                    <input type="text" name="name" maxlength="30" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email address" required>
+                    <textarea placeholder="Enter text here" rows="7" maxlength="500" required></textarea>
+                    <button type="submit" class="buttom-contact-form">Get in touch</button>
+                </form>
+                <ul class="social">
+                    <li>
+                        <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg"></a>
+                    </li>
+                </ul>
+            </div>
+            <a  class="email-address" href="#">diegogarciaq98@gmail.com</a>
+        </section>
     </section>
 
-    <section class="footer">
-    
-    </section>
 
     </div>
     
