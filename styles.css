@@ -151,6 +151,7 @@ body {
 
   .land-page {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -161,18 +162,45 @@ body {
     background-size: cover;
     background-position: center;
     margin-bottom: 5em;
+    overflow: hidden;
+  }
+  
+  @keyframes slidein {
+    from {
+      top: 200%;
+    }
+  
+    to {
+      top: 20%;
+    }
   }
 
-  /* * {
-    border: 2px solid red;
-  } */
+  @keyframes slideto {
+    from {
+      top: 200%;
+    }
+  
+    to {
+      top: 33%;
+    }
+  }
 
   .p1 {
     padding: 10px;
+    position: absolute;
+    top: 200%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
   }
 
   .p2 {
     padding-block: 10px;
+    position: absolute;
+    top: 100%;
+    animation-duration: 3s;
+    animation-name: slideto;
+    animation-fill-mode: forwards;
   }
 
   .land-page .main-text {
@@ -634,6 +662,6 @@ body button:hover {
     padding-bottom: 0;
   }
 }
-  * {
+  /* * {
     border: 2px solid red;
-  }
+  } */
