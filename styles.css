@@ -5,9 +5,13 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  text-align: center;
+  position: absolute;
+}
+
 .wrapper {
-  width: 100%;
-  display: inline-grid;
+ width: 100%;
 }
 
 .header {
@@ -15,6 +19,7 @@
   margin-bottom: 0.6em;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .welcome {
@@ -44,6 +49,7 @@
   padding: 0.4em;
   margin-bottom: 0.1em;
   padding-bottom: 3.6em;
+  width: 100%;
 }
 
 .land-page .main-text {
@@ -90,10 +96,6 @@
 
 .header-desktop .head-menu {
   display: none;
-}
-
-body {
-  text-align: center;
 }
 
 .land-page .social {
@@ -153,13 +155,17 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    height: 60em;
+    min-height: 80em;
     background-image: url('/img/Header-llustration-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: center;
     margin-bottom: 5em;
   }
+
+  /* * {
+    border: 2px solid red;
+  } */
 
   .p1 {
     padding: 10px;
@@ -228,7 +234,7 @@ body {
   width: 3.5em;
 }
 
-.projects h2 {
+.my-recent-works h2 {
   color: #172b4d;
   font-size: 45px;
   font-weight: bold;
@@ -341,7 +347,6 @@ body {
   text-align: center;
   font-weight: 400;
   width: 100%;
-  margin: 10px 15px 1px;
   padding: 12px 12px 10px 12px;
   font-style: normal;
   font-size: 20px;
@@ -430,10 +435,10 @@ body button:hover {
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    padding-inline: 20em;
     font-style: normal;
     line-height: 32px;
-    vertical-align: top;
+    padding-inline: 16em;
+    margin: 0;
   }
 
   .about .lang-container {
@@ -492,7 +497,7 @@ body button:hover {
   padding-bottom: 16em;
 }
 
-.contact .name {
+.contact .contact-p {
   margin: 0;
   font-size: 40px;
   font-weight: 700;
@@ -555,7 +560,7 @@ body button:hover {
   color: #42526e;
 }
 
-.div-contact {
+.form-contact {
   background-image: url("img/backgroundcontact.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -577,17 +582,44 @@ body button:hover {
 
 @media (min-width: 768px) {
   .contact {
-    padding: 0;
+    padding-bottom: 1.5em;
+    background-image: url('/img/contactIzq-background.svg'), url('/img/contact-center-desktop.svg'), url('/img/contact-der-desktop.svg');
+    background-position: bottom left, 20em 15em, bottom right;
+    background-repeat: no-repeat;
   }
 
+  .contact .con-container {
+    display: inline-grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 0;
+    align-items: center;
+  }
+  .contact .contact-p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    padding-inline: 2em;
+    padding-bottom: 1.6em;
+    text-align: left;
+  }
+  
   .contact .email-address {
     display: none;
   }
 
-  .div-contact {
-    background-image: url('/img/contactIzq-background.svg'), url('/img/contact-center-desktop.svg'), url('/img/contact-der-desktop.svg');
-    background-position: bottom left, bottom center, bottom right;
-    background-size: contain, cover, contain;
+  .contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    margin-bottom: 2em;
+  }
+
+  .form-contact {
+    background-image: none;
+    background-position: bottom right;
     background-repeat: no-repeat;
   }
 
@@ -598,5 +630,10 @@ body button:hover {
     list-style: none;
     align-items: center;
     border-top: 1px solid lightgray;
+    width: 100%;
+    padding-bottom: 0;
   }
 }
+  * {
+    border: 2px solid red;
+  }
