@@ -299,7 +299,6 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
-  display: inline-block;
 }
 
 .projects-container img {
@@ -397,6 +396,10 @@ body {
   margin-bottom: 3em;
   row-gap: 54px;
   padding-inline: 0.6em;
+}
+
+.courses li {
+  padding-bottom: 1.5em;
 }
 
 .about .skills-box {
@@ -527,13 +530,17 @@ body button:hover {
   .lang-container ul {
     display: flex;
     list-style: none;
-    padding: 0;
+    padding-bottom: 2.5em;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #ebf0ee;
     margin: 24px 30px 24px 30px;
+  }
+
+  .courses li {
+    padding-bottom: 0;
   }
 }
 
@@ -614,10 +621,22 @@ body button:hover {
   color: #42526e;
 }
 
-.form-contact {
+.form-contact-mobile {
   background-image: url("img/backgroundcontact.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+.form-contact-desktop {
+  display: none;
+}
+
+footer .social-desktop {
+  /* - */
+  display: none;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
 }
 
 .contact .social {
@@ -626,6 +645,9 @@ body button:hover {
   justify-content: center;
   list-style: none;
   align-items: center;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-bottom: 0;
 }
 
 .contact a {
@@ -638,7 +660,7 @@ body button:hover {
   .contact {
     padding-bottom: 1.5em;
     background-image: url('/img/contactIzq-background.svg'), url('/img/contact-center-desktop.svg'), url('/img/contact-der-desktop.svg');
-    background-position: bottom left, 20em 15em, bottom right;
+    background-position: bottom left, 20em 28em, bottom right;
     background-repeat: no-repeat;
   }
 
@@ -647,7 +669,8 @@ body button:hover {
     max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
-    padding: 0;
+    padding-top: 9em;
+    padding-bottom: 9em;
     align-items: center;
   }
 
@@ -665,22 +688,91 @@ body button:hover {
     display: none;
   }
 
-  .contact .contact-form {
-    display: flex;
+  .contact .contact-form2 {
+    display: block;
     flex-direction: column;
-    gap: 1.4em;
-    margin-bottom: 2em;
+    align-items: center;
+    margin-bottom: 0;
   }
 
-  .form-contact {
+  .form-contact-mobile {
+    display: none;
     background-image: none;
     background-position: bottom right;
     background-repeat: no-repeat;
   }
 
+  .form-contact-desktop {
+    display:block;
+    position: relative;
+  }
+  
+  .form-contact-desktop .names input {
+    width: 10%;
+    padding-right: 100px;
+    float: left;
+    padding: 0.9em;
+    border-radius: 0.25em;
+    border: 1.5px solid lightgray;
+  }
+
+  .contact-form2 .emails input{
+    width: 100%;
+    padding-top: 10px;
+    padding: 0.9em;
+    border-radius: 0.25em;
+    border: 1.5px solid lightgray;
+  }
+  
+  .contact-form2 textarea {
+    width: 100%;
+    outline: none;
+    padding: 12px;
+    border: 1.5px solid lightgray;
+    border-radius: 0.25em;
+  }
+  
+  .contact-form2 input:focus,
+  .contact-form2 textarea:focus {
+    outline: none;
+    border: 1.5px solid #36b37e;
+  }
+  
+  .contact-form2:is(:focus) {
+    transition: 1s ease-in-out;
+  }
+  
+  .contact-form2:focus {
+    color: red;
+  }
+  
+  .buttom-contact2-form {
+    background-color: #36b37e;
+    position: relative;
+    float: left;
+    border-radius: 7px;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 117%;
+    margin-inline: auto;
+    border: none;
+    width: 129px;
+  }
+  
+  .buttom-contact-form2:hover {
+    background-color: #36b37f;
+  }
+  
+  .buttom-contact-form2:focus {
+    background-color: #008552;
+  }
+
   .contact .social {
     /* - */
-    display: flex;
+    display: none;
     justify-content: center;
     list-style: none;
     align-items: center;
@@ -688,8 +780,25 @@ body button:hover {
     width: 100%;
     padding-bottom: 0;
   }
+
+  footer .social-desktop {
+  /* - */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-bottom: 0;
+  }
+  .foot a {
+    margin: 25px 6px 1em 12px;
+    display: block;
+    align-content: center;
+  }
+  
 }
 
-/* {
+*{
 border: 2px solid red;
-} */
+}
