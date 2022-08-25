@@ -164,26 +164,6 @@ body {
     margin-bottom: 5em;
     overflow: hidden;
   }
-  
-  @keyframes slidein {
-    from {
-      top: 200%;
-    }
-  
-    to {
-      top: 20%;
-    }
-  }
-
-  @keyframes slideto {
-    from {
-      top: 200%;
-    }
-  
-    to {
-      top: 33%;
-    }
-  }
 
   .p1 {
     padding: 10px;
