@@ -703,9 +703,9 @@ footer .social-desktop {
   }
 
   .form-contact-desktop {
-    display:block;
+    display: block;
   }
-  
+
   .form-contact-desktop .name-text input {
     width: 45%;
     float: left;
@@ -714,6 +714,7 @@ footer .social-desktop {
     border: 1.5px solid lightgray;
     margin-bottom: 2em;
   }
+
   .form-contact-desktop .last-text input {
     width: 45%;
     float: right;
@@ -740,13 +741,13 @@ footer .social-desktop {
     border-radius: 0.25em;
     margin-bottom: 2em;
   }
-  
+
   .contact-form2 input:focus,
   .contact-form2 textarea:focus {
     outline: none;
     border: 1.5px solid #36b37e;
   }
-  
+
   .buttom-contact-form2 {
     position: relative;
     float: left;
@@ -761,11 +762,11 @@ footer .social-desktop {
     border: none;
     width: 129px;
   }
-  
+
   .buttom-contact-form2:hover {
     background-color: #36b37f;
   }
-  
+
   .buttom-contact-form2:focus {
     background-color: #008552;
   }
@@ -782,19 +783,19 @@ footer .social-desktop {
   }
 
   footer .social-desktop {
-  /* - */
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  align-items: center;
-  border-top: 1px solid lightgray;
-  width: 100%;
-  padding-bottom: 0;
+    /* - */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    width: 100%;
+    padding-bottom: 0;
   }
+
   .foot a {
     margin: 25px 6px 1em 12px;
     display: block;
     align-content: center;
   }
-  
 }
