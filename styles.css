@@ -405,6 +405,16 @@ body {
   background-color: #ebf0ee;
 }
 
+.ico-framework {
+  transition: 0.2s ease-in;
+}
+
+.skills-box:hover .ico-framework{
+  cursor: pointer;
+  transform: scale(1.2);
+  /* box-shadow: 0 5px 10px rgba(18, 18, 18, 0.529); */
+}
+
 .lang-container a {
   color: #36b37e;
   margin: 6px;
