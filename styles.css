@@ -704,32 +704,41 @@ footer .social-desktop {
 
   .form-contact-desktop {
     display:block;
-    position: relative;
   }
   
-  .form-contact-desktop .names input {
-    width: 10%;
-    padding-right: 100px;
+  .form-contact-desktop .name-text input {
+    width: 45%;
     float: left;
     padding: 0.9em;
     border-radius: 0.25em;
     border: 1.5px solid lightgray;
+    margin-bottom: 2em;
   }
-
-  .contact-form2 .emails input{
-    width: 100%;
-    padding-top: 10px;
+  .form-contact-desktop .last-text input {
+    width: 45%;
+    float: right;
     padding: 0.9em;
     border-radius: 0.25em;
     border: 1.5px solid lightgray;
+    margin-bottom: 2em;
   }
-  
+
+  .form-contact-desktop .emails input {
+    width: 100%;
+    float: right;
+    padding: 0.9em;
+    border-radius: 0.25em;
+    border: 1.5px solid lightgray;
+    margin-bottom: 2em;
+  }
+
   .contact-form2 textarea {
     width: 100%;
     outline: none;
     padding: 12px;
     border: 1.5px solid lightgray;
     border-radius: 0.25em;
+    margin-bottom: 2em;
   }
   
   .contact-form2 input:focus,
@@ -738,23 +747,14 @@ footer .social-desktop {
     border: 1.5px solid #36b37e;
   }
   
-  .contact-form2:is(:focus) {
-    transition: 1s ease-in-out;
-  }
-  
-  .contact-form2:focus {
-    color: red;
-  }
-  
-  .buttom-contact2-form {
-    background-color: #36b37e;
+  .buttom-contact-form2 {
     position: relative;
     float: left;
+    background-color: #36b37e;
     border-radius: 7px;
     color: white;
     padding: 12px 12px;
     text-align: center;
-    display: inline-block;
     font-size: 17px;
     line-height: 117%;
     margin-inline: auto;
@@ -797,8 +797,4 @@ footer .social-desktop {
     align-content: center;
   }
   
-}
-
-*{
-border: 2px solid red;
 }
