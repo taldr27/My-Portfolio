@@ -580,6 +580,14 @@ body button:hover {
   border: 1.5px solid #36b37e;
 }
 
+.contact-form:is(:focus) {
+  transition: 1s ease-in-out;
+}
+
+.contact-form:focus {
+color: red;
+}
+
 .buttom-contact-form {
   background-color: #36b37e;
   border-radius: 7px;
