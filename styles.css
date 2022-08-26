@@ -48,7 +48,7 @@ body {
   background-size: cover;
   padding: 0.4em;
   margin-bottom: 0.1em;
-  padding-bottom: 3.6em;
+  padding-bottom: 5em;
   width: 100%;
 }
 
@@ -102,7 +102,7 @@ body {
   /* - */
   display: flex;
   justify-content: center;
-  padding-top: 2.5em;
+  margin-top: 6em;
   list-style: none;
   align-items: center;
 }
@@ -161,7 +161,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     overflow: hidden;
   }
 
@@ -223,7 +223,7 @@ body {
   .land-page .description {
     font-size: 20px;
     line-height: 32px;
-    padding-inline: 7em;
+    max-width: 770px;
     color: #172b4d;
     margin: 0;
     font-weight: 400;
@@ -239,7 +239,6 @@ body {
 
   .land-page .social {
     /* - */
-    margin-top: -50px;
     list-style: none;
   }
 }
@@ -530,7 +529,6 @@ body button:hover {
   .lang-container ul {
     display: flex;
     list-style: none;
-    padding-bottom: 2.5em;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -659,7 +657,7 @@ footer .social-desktop {
 @media (min-width: 768px) {
   .contact {
     padding-bottom: 1.5em;
-    background-image: url('/img/contactIzq-background.svg'), url('/img/contact-center-desktop.svg'), url('/img/contact-der-desktop.svg');
+    background-image: url('img/contactIzq-background.svg'), url('img/contact-center-desktop.svg'), url('img/contact-der-desktop.svg');
     background-position: bottom left, 20em 28em, bottom right;
     background-repeat: no-repeat;
   }
