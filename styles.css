@@ -48,7 +48,7 @@ body {
   background-size: cover;
   padding: 0.4em;
   margin-bottom: 0.1em;
-  padding-bottom: 3.6em;
+  padding-bottom: 5em;
   width: 100%;
 }
 
@@ -102,7 +102,7 @@ body {
   /* - */
   display: flex;
   justify-content: center;
-  padding-top: 2.5em;
+  margin-top: 6em;
   list-style: none;
   align-items: center;
 }
@@ -157,11 +157,11 @@ body {
     flex-wrap: wrap;
     text-align: center;
     min-height: 80em;
-    background-image: url('/img/Header-llustration-desktop.png');
+    background-image: url('./img/Header-llustration-desktop.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     overflow: hidden;
   }
 
@@ -223,7 +223,7 @@ body {
   .land-page .description {
     font-size: 20px;
     line-height: 32px;
-    padding-inline: 7em;
+    max-width: 770px;
     color: #172b4d;
     margin: 0;
     font-weight: 400;
@@ -239,7 +239,6 @@ body {
 
   .land-page .social {
     /* - */
-    margin-top: -50px;
     list-style: none;
   }
 }
@@ -299,7 +298,6 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
-  display: inline-block;
 }
 
 .projects-container img {
@@ -397,6 +395,10 @@ body {
   margin-bottom: 3em;
   row-gap: 54px;
   padding-inline: 0.6em;
+}
+
+.courses li {
+  padding-bottom: 1.5em;
 }
 
 .about .skills-box {
@@ -527,13 +529,16 @@ body button:hover {
   .lang-container ul {
     display: flex;
     list-style: none;
-    padding: 0;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #ebf0ee;
     margin: 24px 30px 24px 30px;
+  }
+
+  .courses li {
+    padding-bottom: 0;
   }
 }
 
@@ -614,10 +619,22 @@ body button:hover {
   color: #42526e;
 }
 
-.form-contact {
+.form-contact-mobile {
   background-image: url("img/backgroundcontact.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+.form-contact-desktop {
+  display: none;
+}
+
+footer .social-desktop {
+  /* - */
+  display: none;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
 }
 
 .contact .social {
@@ -626,6 +643,9 @@ body button:hover {
   justify-content: center;
   list-style: none;
   align-items: center;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  padding-bottom: 0;
 }
 
 .contact a {
@@ -637,8 +657,8 @@ body button:hover {
 @media (min-width: 768px) {
   .contact {
     padding-bottom: 1.5em;
-    background-image: url('/img/contactIzq-background.svg'), url('/img/contact-center-desktop.svg'), url('/img/contact-der-desktop.svg');
-    background-position: bottom left, 20em 15em, bottom right;
+    background-image: url('img/contactIzq-background.svg'), url('img/contact-center-desktop.svg'), url('img/contact-der-desktop.svg');
+    background-position: bottom left, 20em 28em, bottom right;
     background-repeat: no-repeat;
   }
 
@@ -647,7 +667,8 @@ body button:hover {
     max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
-    padding: 0;
+    padding-top: 9em;
+    padding-bottom: 9em;
     align-items: center;
   }
 
@@ -665,20 +686,101 @@ body button:hover {
     display: none;
   }
 
-  .contact .contact-form {
-    display: flex;
+  .contact .contact-form2 {
+    display: block;
     flex-direction: column;
-    gap: 1.4em;
-    margin-bottom: 2em;
+    align-items: center;
+    margin-bottom: 0;
   }
 
-  .form-contact {
+  .form-contact-mobile {
+    display: none;
     background-image: none;
     background-position: bottom right;
     background-repeat: no-repeat;
   }
 
+  .form-contact-desktop {
+    display: block;
+  }
+
+  .form-contact-desktop .name-text input {
+    width: 45%;
+    float: left;
+    padding: 0.9em;
+    border-radius: 0.25em;
+    border: 1.5px solid lightgray;
+    margin-bottom: 2em;
+  }
+
+  .form-contact-desktop .last-text input {
+    width: 45%;
+    float: right;
+    padding: 0.9em;
+    border-radius: 0.25em;
+    border: 1.5px solid lightgray;
+    margin-bottom: 2em;
+  }
+
+  .form-contact-desktop .emails input {
+    width: 100%;
+    float: right;
+    padding: 0.9em;
+    border-radius: 0.25em;
+    border: 1.5px solid lightgray;
+    margin-bottom: 2em;
+  }
+
+  .contact-form2 textarea {
+    width: 100%;
+    outline: none;
+    padding: 12px;
+    border: 1.5px solid lightgray;
+    border-radius: 0.25em;
+    margin-bottom: 2em;
+  }
+
+  .contact-form2 input:focus,
+  .contact-form2 textarea:focus {
+    outline: none;
+    border: 1.5px solid #36b37e;
+  }
+
+  .buttom-contact-form2 {
+    position: relative;
+    float: left;
+    background-color: #36b37e;
+    border-radius: 7px;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 117%;
+    margin-inline: auto;
+    border: none;
+    width: 129px;
+  }
+
+  .buttom-contact-form2:hover {
+    background-color: #36b37f;
+  }
+
+  .buttom-contact-form2:focus {
+    background-color: #008552;
+  }
+
   .contact .social {
+    /* - */
+    display: none;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  footer .social-desktop {
     /* - */
     display: flex;
     justify-content: center;
@@ -688,8 +790,10 @@ body button:hover {
     width: 100%;
     padding-bottom: 0;
   }
-}
 
-/* {
-border: 2px solid red;
-} */
+  .foot a {
+    margin: 25px 6px 1em 12px;
+    display: block;
+    align-content: center;
+  }
+}

@@ -44,7 +44,7 @@
                     <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                         don’t hestiate to contact me.</p>
                 </div>
-                <ul class="social">
+                <div><ul class="social">
                     <li>
                         <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg" /></a>
                     </li>
@@ -62,6 +62,8 @@
                     </li>
                 </ul>
                 <img class="disabled" alt="disabled-button" src="img/disabled.svg" />
+            </div>
+                
             </div>
         </section>
         
@@ -168,7 +170,7 @@
                 <div class="skills-box">
                     <img class="ico-framework" alt="lang-ico" src="img/icon-languages.svg" />
                         <h3>Languages</h3>
-                        <ul>
+                        <ul class="courses">
                             <li><a href="#">JavaScript</a></li>
                             <li><a href="#">Ruby</a></li>
                             <li><a href="#">CSS</a></li>
@@ -178,7 +180,7 @@
                 <div class="skills-box">
                     <img class="ico-framework" alt="framework-ico" src="img/icon-frameworks.svg" />
                         <h3>Frameworks</h3>
-                        <ul>
+                        <ul class="courses">
                             <li><a href="#">Bootsrap</a></li>
                             <li><a href="#">Ruby on rails</a></li>
                             <li><a href="#">RSpec</a></li>
@@ -189,7 +191,7 @@
                 <div class="skills-box">
                     <img class="ico-framework" alt="framework-skills" src="img/icon-skills.svg" />
                         <h3>Skills</h3>
-                        <ul>
+                        <ul class="courses">
                             <li><a href="#">Codekit</a></li>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Codepen</a></li>
@@ -209,12 +211,27 @@
         
                     </div>
                     
-                    <div class="form-contact">
+                    <div class="form-contact-mobile">
                         <form class="contact-form" action="https://formspree.io/f/xayknejl" method="post">
                             <input type="text" name="name" maxlength="30" placeholder="Full Name" required>
                             <input type="email" name="email" placeholder="Email address" required>
                             <textarea placeholder="Enter text here" rows="7" maxlength="500" required></textarea>
                             <button type="submit" class="buttom-contact-form">Get in touch</button>
+                        </form>
+                    </div>
+                    <div class="form-contact-desktop">
+                        <form class="contact-form2" action="https://formspree.io/f/xayknejl" method="post">
+                            <div class="names">
+                                <div class="name-text"><input type="text" name="name" maxlength="30" placeholder="First Name" required></div>
+                                <div class="last-text"><input type="text" name="lastname" maxlength="30" placeholder="Last Name" required></div>
+                                
+                            </div>
+                            <div class="emails">
+                                <input type="email" name="email" placeholder="Email address" required>
+                            </div>
+                            
+                            <textarea placeholder="Type something" rows="7" maxlength="500" required></textarea>
+                            <button type="submit" class="buttom-contact-form2">Get in touch</button>
                         </form>
                     </div>
                 </section>
@@ -240,6 +257,28 @@
                 <a  class="email-address" href="#">diegogarciaq98@gmail.com</a>
             </div>
         </section>
+
+        <footer class="foot">
+            <div class="social-desktop">
+                <ul class="social-desktop">
+                    <li>
+                        <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
     
 </body>
