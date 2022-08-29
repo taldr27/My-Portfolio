@@ -14,6 +14,7 @@ body {
   width: 100%;
 }
 
+/* Header section */
 .header {
   margin-top: 3em;
   margin-bottom: 0.6em;
@@ -37,8 +38,9 @@ body {
   margin-right: 3em;
 }
 
-/* Land Page Styles */
+/* Header section end */
 
+/* Land Page Styles */
 .land-page {
   display: flex;
   flex-direction: column;
