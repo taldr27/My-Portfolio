@@ -15,15 +15,26 @@
 ### Usage
 - Open the .html
 
+### Live GitHub Page
+- https://taldr27.github.io/
+
 ### Setup
 
-- Resolution 375 x 726
+- Go to: 
 
 ## Authors
 
 👤 **Author1**
 
 - GitHub: [@taldr27](https://github.com/taldr27)
+
+👤 **Author2**
+
+- GitHub: [@MahdiSohaily](https://github.com/MahdiSohaily)
+
+👤 **Author3**
+
+- GitHub: [@cvalencia1991](https://github.com/cvalencia1991)
 
 ## 🤝 Contributing
 
