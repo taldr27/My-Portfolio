@@ -37,7 +37,6 @@ body {
   align-self: center;
   margin-right: 3em;
 }
-
 /* Header section end */
 
 /* Land Page Styles */
@@ -101,7 +100,6 @@ body {
 }
 
 .land-page .social {
-  /* - */
   display: flex;
   justify-content: center;
   margin-top: 6em;
@@ -238,11 +236,6 @@ body {
     align-items: center;
     padding-inline: 10em;
   }
-
-  .land-page .social {
-    /* - */
-    list-style: none;
-  }
 }
 
 /* My projects section styles */
@@ -334,15 +327,18 @@ body {
   line-height: 117%;
   margin: 29px 103px 24px 103px;
   border: none;
-  transition: 0.3s ease-in-out;
 }
 
 .button:hover {
   background-color: #36b37f;
 }
 
-.button:focus {
+.button:after,
+.button:active {
   background-color: #008552;
+  transform: translateY(2px);
+  box-shadow: 0 0 0;
+  outline: 0;
 }
 
 @media (min-width: 768px) {
@@ -448,23 +444,6 @@ body {
   justify-content: center;
   background-color: #ebf0ee;
   margin: 24px 30px 24px 30px;
-}
-
-.about .button {
-  background-color: #36b37e;
-  border-radius: 7px;
-  color: white;
-  padding: 12px 12px;
-  text-align: center;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 117%;
-  margin: 29px 103px 24px 103px;
-  border: none;
-}
-
-body button:hover {
-  background-color: #008552;
 }
 
 @media (min-width: 768px) {
@@ -595,12 +574,13 @@ body button:hover {
 }
 
 .buttom-contact-form {
+  position: relative;
+  float: left;
   background-color: #36b37e;
   border-radius: 7px;
   color: white;
   padding: 12px 12px;
   text-align: center;
-  display: inline-block;
   font-size: 17px;
   line-height: 117%;
   margin-inline: auto;
@@ -612,8 +592,12 @@ body button:hover {
   background-color: #36b37f;
 }
 
-.buttom-contact-form:focus {
+.buttom-contact-form:after,
+.buttom-contact-form:active {
   background-color: #008552;
+  transform: translateY(2px);
+  box-shadow: 0 0 0;
+  outline: 0;
 }
 
 .contact .email-address {
@@ -746,29 +730,6 @@ footer .social-desktop {
   .contact-form2 textarea:focus {
     outline: none;
     border: 1.5px solid #36b37e;
-  }
-
-  .buttom-contact-form2 {
-    position: relative;
-    float: left;
-    background-color: #36b37e;
-    border-radius: 7px;
-    color: white;
-    padding: 12px 12px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 117%;
-    margin-inline: auto;
-    border: none;
-    width: 129px;
-  }
-
-  .buttom-contact-form2:hover {
-    background-color: #36b37f;
-  }
-
-  .buttom-contact-form2:focus {
-    background-color: #008552;
   }
 
   .contact .social {
