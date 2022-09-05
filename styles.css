@@ -39,7 +39,7 @@ body {
 }
 
 .hide-menu {
-  display: flex;
+  display: none;
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -160,13 +160,14 @@ body {
   }
 
   .header-desktop {
+    display: block;
     position: absolute;
+    top: 0;
     width: 100%;
     display: flex;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    padding-top: 3em;
     list-style: none;
   }
 

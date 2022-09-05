@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+    <script src="/main.js"></script>
     <script src="https://kit.fontawesome.com/1bc3a7e061.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,16 +25,16 @@
 
         <header class="header">
             <nav class="toggle-menu">
-                <ul class="hide-menu">
-                    <li class="x">X</li>
+                <ul class="hide-menu" id="hide-menu">
+                    <li class="x"><i class="fa-solid fa-xmark" onclick="myFunction()"></i></li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#portfolio" onclick="myFunction()">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about" onclick="myFunction()">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact" onclick="myFunction()">Contact</a>
                     </li>
 
                 </ul>
@@ -42,23 +43,24 @@
             <div class="header-mobile">
                 <a class="welcome" href="#"><h1>Welcome!</h1></a>
                 <a>
-                    <i class="fa-solid fa-bars fa-lg"></i>
+                    <i class="fa-solid fa-bars fa-lg" onclick="myFunction()"></i>
                 </a>
             </div>
-                <ul class="header-desktop">
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+
         </header>
 
         <section class="land-page">
+            <ul class="header-desktop">
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
             <div class="land-container">
                 <div class="p1">
                     <h2 class="main-text">Hey there. I'm Diego</h2>
@@ -92,7 +94,7 @@
             </div>
         </section>
         
-        <section class="my-recent-works">        
+        <section class="my-recent-works" id="portfolio">        
                 <div>
                     <h2 class="works">My Recent Works</h2>
                     <img class="line" alt="line-img" src="img/line.svg" />
@@ -179,7 +181,7 @@
                 </section>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-main">
                 <p class="name">About me</p>
                 <h3 class="main-about"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -222,7 +224,7 @@
             </section>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-cont">
                 <section class="con-container">
                     <div class="div-p">
