@@ -38,6 +38,37 @@ body {
   margin-right: 3em;
 }
 
+.hide-menu {
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  flex-direction: column;
+  list-style: none;
+  min-height: 100vh;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 10em;
+  padding-left: 3em;
+}
+
+.hide-menu .x {
+  color: black;
+  position: absolute;
+  top: 4em;
+  left: 85%;
+}
+
+.hide-menu a {
+  font-size: 32px;
+  color: #3a4a42;
+  text-decoration: none;
+}
+
+.hide-menu li {
+  padding-top: 2.5em;
+}
+
 /* Header section end */
 
 /* Land Page Styles */
