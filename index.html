@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Diego Garcia | Portfolio</title>
+    <link rel="shortcut icon" href="/img/hippo-solid.svg">
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,31 +16,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bc3a7e061.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <div class="wrapper">
 
         <header class="header">
+            <div class="header-mobile">
                 <a class="welcome" href="#"><h1>Welcome</h1></a>
                 <nav class="toggle-menu">
-                    <img alt="burger" src="img/Union.svg" />
+                    <i class="fa-solid fa-bars fa-lg"></i>
                 </nav>
-            
+            </div>
+                <ul class="header-desktop">
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
         </header>
 
-        <ul class="header-desktop">
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-        <!-- <img class="back-desktop" alt="back-desktop" src="/img/background-desktop.svg"/>-->
         <section class="land-page">
             <div class="land-container">
                 <div class="p1">
@@ -50,32 +52,31 @@
                     <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                         don’t hestiate to contact me.</p>
                 </div>
-                <div><ul class="social">
-                    <li>
-                        <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg" /></a>
-                    </li>
-                </ul>
+                <div>
+                    <ul class="social">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-medium"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-angellist"></i></a>
+                        </li>
+                    </ul>
                 <img class="disabled" alt="disabled-button" src="img/disabled.svg" />
             </div>
                 
             </div>
         </section>
         
-        
-        <section class="my-recent-works">
-            
+        <section class="my-recent-works">        
                 <div>
                     <h2 class="works">My Recent Works</h2>
                     <img class="line" alt="line-img" src="img/line.svg" />
@@ -159,10 +160,7 @@
                             <button class="button">See Project</button>
                         </div>
                     </div>
-                    
-
                 </section>
-            
         </section>
 
         <section class="about">
@@ -206,7 +204,6 @@
                         </ul>
                 </div>
             </section>
-
         </section>
 
         <section class="contact">
@@ -214,9 +211,8 @@
                 <section class="con-container">
                     <div class="div-p">
                         <p class="contact-p">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-        
                     </div>
-                    
+
                     <div class="form-contact-mobile">
                         <form class="contact-form" action="https://formspree.io/f/xayknejl" method="post">
                             <input type="text" name="name" maxlength="30" placeholder="Full Name" required>
@@ -244,19 +240,19 @@
                 <div class="contact-social">
                     <ul class="social">
                         <li>
-                            <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg"></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg"></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                            <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg"></a>
+                            <a href="#"><i class="fa-brands fa-medium"></i></a>
                         </li>
                         <li>
-                            <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg"></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
                         </li>
                         <li>
-                            <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg"></a>
+                            <a href="#"><i class="fa-brands fa-angellist"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -268,24 +264,23 @@
             <div class="social-desktop">
                 <ul class="social-desktop">
                     <li>
-                        <a href="#"><img class="twitter-logo" alt="twitter-logo" src="img/twitter.svg"></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="#"><img class="linkdn-logo" alt="Linkedin-logo" src="img/Linkedin_icon.svg"></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                     <li>
-                        <a href="#"><img class="medium-logo" alt="medium-logo" src="img/medium.svg"></a>
+                        <a href="#"><i class="fa-brands fa-medium"></i></a>
                     </li>
                     <li>
-                        <a href="#"><img class="github-logo" alt="github-logo" src="img/github.svg"></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="#"><img class="angelist-logo" alt="angellist-logo" src="img/angellist.svg"></a>
+                        <a href="#"><i class="fa-brands fa-angellist"></i></a>
                     </li>
                 </ul>
             </div>
         </footer>
     </div>
-    
 </body>
 </html>
