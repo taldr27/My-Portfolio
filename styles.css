@@ -379,8 +379,10 @@ body {
 }
 
 .mobile-popup {
-  display: flex;
-  position: relative;
+  display: none;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
   flex-direction: column;
   border: 10px solid rebeccapurple;
   height: 100vh;
@@ -453,12 +455,16 @@ body {
   justify-content: center;
   justify-content: space-between;
   min-width: 80%;
-  background-color: #172b4d;
+  gap: 1.2em;
 }
 
 .btn-popup {
   margin: 0;
-  max-width: 300px;
+  flex-grow: 1;
+}
+
+.mobile-popup i {
+  color: #fff;
 }
 
 @media (min-width: 768px) {
