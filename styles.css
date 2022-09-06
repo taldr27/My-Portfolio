@@ -384,14 +384,11 @@ body {
   flex-direction: column;
   border: 10px solid rebeccapurple;
   height: 100vh;
-  
-  
-  
+  gap: 1.2em;
 }
 
 .mobile-popup img {
   padding: 1em;
-
 }
 
 .close-popup {
@@ -402,8 +399,24 @@ body {
   left: 85%;
 }
 
+.mobile-popup h3 {
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.mobile-popup p {
+  color: #344563;
+  max-width: 80%;
+  align-self: center;
+}
+
 .mobile-popup h3, p{
   text-align: start;
+}
+
+.mobile-popup div {
+  max-width: 80%;
+  align-self: center;
 }
 
 .details-popup ul {
@@ -418,7 +431,6 @@ body {
 .details-popup li {
   margin-inline: 0.4em;
   min-width: 0;
-  
 }
 
 .details-popup a {
@@ -439,10 +451,14 @@ body {
 .btn-container {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
+  min-width: 80%;
+  background-color: #172b4d;
 }
 
 .btn-popup {
   margin: 0;
+  max-width: 300px;
 }
 
 @media (min-width: 768px) {
