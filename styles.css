@@ -393,6 +393,11 @@ body {
   padding: 1em;
 }
 
+.details-popup {
+  min-width: 100%;
+  align-items: flex-start;
+}
+
 .close-popup {
   list-style: none;
   color: black;
@@ -410,6 +415,7 @@ body {
   color: #344563;
   max-width: 80%;
   align-self: center;
+  line-height: 24px;
 }
 
 .mobile-popup h3, p{
