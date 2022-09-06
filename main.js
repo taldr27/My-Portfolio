@@ -2,8 +2,7 @@ function toggleBar() {
   const x = document.getElementById('hide-menu');
   if (x.style.display === 'none') {
     x.style.display = 'flex';
-  }
-  else {
+  } else {
     x.style.display = 'none';
   }
 }
@@ -78,7 +77,6 @@ const projects = [
     button2: 'link2',
   },
 ];
-
 function toggleBarWorks(workNumber) {
   const y = document.getElementById('mobile-popup');
   let i = 0;
@@ -111,12 +109,10 @@ function toggleBarWorks(workNumber) {
     y.style.display = 'flex';
   }
 }
-document.getElementById('btnPopup1').addEventListener('click', toggleBarWorks());
-document.getElementById('btnPopup2').addEventListener('click', toggleBarWorks);
-document.getElementById('btnPopup3').addEventListener('click', toggleBarWorks);
-document.getElementById('btnPopup4').addEventListener('click', toggleBarWorks);
-document.getElementById('btnPopup5').addEventListener('click', toggleBarWorks);
-document.getElementById('btnPopup6').addEventListener('click', toggleBarWorks);
-  
-  // const boxes = document.querySelectorAll('.button');
-  // boxes.forEach((box) => { box.addEventListener('click', toggleBarWorks); });
+
+document.getElementById('btnPopup1').addEventListener('click', () => { toggleBarWorks(1); });
+document.getElementById('btnPopup2').addEventListener('click', () => { toggleBarWorks(2); });
+document.getElementById('btnPopup3').addEventListener('click', () => { toggleBarWorks(3); });
+document.getElementById('btnPopup4').addEventListener('click', () => { toggleBarWorks(4); });
+document.getElementById('btnPopup5').addEventListener('click', () => { toggleBarWorks(5); });
+document.getElementById('btnPopup6').addEventListener('click', () => { toggleBarWorks(6); });
