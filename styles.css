@@ -378,6 +378,73 @@ body {
   outline: 0;
 }
 
+.mobile-popup {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border: 10px solid rebeccapurple;
+  height: 100vh;
+  
+  
+  
+}
+
+.mobile-popup img {
+  padding: 1em;
+
+}
+
+.close-popup {
+  list-style: none;
+  color: black;
+  position: absolute;
+  top: 3em;
+  left: 85%;
+}
+
+.mobile-popup h3, p{
+  text-align: start;
+}
+
+.details-popup ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  background-color: #fff;
+  justify-content: flex-start;
+}
+
+.details-popup li {
+  margin-inline: 0.4em;
+  min-width: 0;
+  
+}
+
+.details-popup a {
+  color: #3a4a42;
+  width: max-content;
+  text-align: left;
+  padding: 0.5em;
+  height: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-popup {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .my-recent-works .line {
     display: none;
