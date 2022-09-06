@@ -12,11 +12,11 @@ document.getElementById('burger').addEventListener('click', toggleBar);
 
 function toggleBarWorks() {
   const y = document.getElementById('mobile-popup');
-  if (y.style.display === 'none') {
-    y.style.display = 'flex';
+  if (y.style.display === 'flex') {
+    y.style.display = 'none';
 }
   else {
-    y.style.display = 'none';
+    y.style.display = 'flex';
   }
 }
 
