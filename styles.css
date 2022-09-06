@@ -384,9 +384,10 @@ body {
   position: fixed;
   background-color: #fff;
   flex-direction: column;
-  border: 10px solid rebeccapurple;
+  border: 10px solid #c1c7d0;
   height: 100vh;
   gap: 1.2em;
+  max-width: 100%;
 }
 
 .mobile-popup img {
@@ -394,16 +395,20 @@ body {
 }
 
 .details-popup {
-  min-width: 100%;
+  max-width: 100%;
   align-items: flex-start;
 }
 
-.close-popup {
-  list-style: none;
+.close-popup .fa-xmark{
   color: black;
   position: absolute;
-  top: 3em;
-  left: 85%;
+  top: 1.3em;
+  left: 86%;
+  font-size: 35px;
+}
+
+.mobile-popup .close-popup {
+  list-style: none;
 }
 
 .mobile-popup h3 {
@@ -413,18 +418,13 @@ body {
 
 .mobile-popup p {
   color: #344563;
-  max-width: 80%;
+  max-width: 92%;
   align-self: center;
   line-height: 24px;
 }
 
-.mobile-popup h3, p{
+.mobile-popup h3, p {
   text-align: start;
-}
-
-.mobile-popup div {
-  max-width: 80%;
-  align-self: center;
 }
 
 .details-popup ul {
@@ -437,8 +437,7 @@ body {
 }
 
 .details-popup li {
-  margin-inline: 0.4em;
-  min-width: 0;
+  margin-inline: 0.2em;
 }
 
 .details-popup a {
@@ -465,7 +464,7 @@ body {
 }
 
 .btn-popup {
-  margin: 0;
+  margin: 0.9em;
   flex-grow: 1;
 }
 
