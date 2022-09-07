@@ -180,7 +180,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   window.onload = works();
- 
   const aboutContainer = document.getElementById('about');
 
   function Addnew() {
@@ -295,7 +294,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const div3A1 = document.createElement('a');
     div3A1.id = 'btn-1';
-    div3A1.className = 'button btn-container';
+    div3A1.className = 'button btn-popup';
     div3A1.innerHTML = 'See live     ';
     mainDiv3.appendChild(div3A1);
 
@@ -308,10 +307,6 @@ window.addEventListener('DOMContentLoaded', () => {
     div3A2.className = 'button btn-popup';
     div3A2.innerHTML = 'See source     ';
     mainDiv3.appendChild(div3A2);
-
-    const div3A2I = document.createElement('i');
-    div3A2I.className = 'fa-brands fa-github';
-    div3A2.appendChild(div2A2I);
   }
   window.onload = Addnew();
   const sectionContainer = document.getElementById('mobile-popup-section');
