@@ -412,7 +412,6 @@ body {
 .mobile-popup h3 {
   font-size: 32px;
   color: #172b4d;
-  margin-top:;
   margin-left: 0.5em;
   margin-right: 1.9em;
 }
@@ -552,7 +551,6 @@ body {
     padding: 0;
     min-width: 70%;
     min-height: 100px;
-
   }
 
   .mobile-popup h3 {
