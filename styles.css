@@ -508,16 +508,22 @@ body {
     align-self: center;
     position: fixed;
     margin-top: 3.5em;
+    margin-bottom: 3.5em;
     background-color: #fff;
     flex-direction: column;
-    height: 90vh;
+    height: 90%;
     gap: 1em;
     max-width: 60%;
   }
 
+  .close-popup .fa-xmark{
+    font-size: 100px;
+    color: red;
+  }
+  
   .mobile-popup img {
     padding: 1em;
-    max-height: 70%;
+    max-height: 50vh;
   }
 
   .main-popup {
@@ -545,8 +551,9 @@ body {
     min-width: 59%;
   }
 
-  .details-popup a {
-    margin-left: 1.5em;
+  .details-popup {
+    align-self: flex-start;
+    padding-left: 1em;
   }
 }
 
