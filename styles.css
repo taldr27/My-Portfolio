@@ -943,11 +943,9 @@ footer .social-desktop {
 
   .form-contact-desktop .emails input {
     width: 100%;
-    float: right;
     padding: 0.9em;
     border-radius: 0.25em;
     border: 1.5px solid lightgray;
-    margin-bottom: 2em;
   }
 
   .contact-form2 textarea {
@@ -974,7 +972,16 @@ footer .social-desktop {
     border-top: 1px solid lightgray;
     width: 100%;
     padding-bottom: 0;
+    
   }
+
+  .form-field.error input {
+    border-color: #dc3545;
+}
+
+.form-field.success input {
+    border-color: #28a745;
+}
 
   footer .social-desktop {
     /* - */

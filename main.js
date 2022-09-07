@@ -347,4 +347,53 @@ window.addEventListener('DOMContentLoaded', () => {
   b5.addEventListener('click', () => { openPopup(4); });
   const b6 = document.getElementById('btnPopup6');
   b6.addEventListener('click', () => { openPopup(5); });
+
+  // Form Validation
+
+  
+  // function validate(){
+  //   var mail = document.getElementById('email-desktop').value;
+  //   var regx = /^\[a-zA-Z0-9\._]+)@([a-zA-Z0-9]+.([a-z]+).[a-z]+)?$/;
+
+  //   if(regx.text(mail)){
+  //     alert('Valid email')
+  //     return true;
+  //   } else{
+  //     alert('sorry')
+  //     return false;
+  //   }
+  // }
 });
+
+const email = document.getElementById('email-mobile');
+const form = document.getElementById('contactFormMobile');
+const error = document.getElementById('error');
+const regx = '^[A-Z]$';
+
+form.addEventListener('submit', (e) => {
+  if (email.value.includes('asd') === true) {
+    e.preventDefault();
+    error.innerHTML = 'Set it in lower case';
+  }
+});
+
+// const form = document.getElementById('contactFormMobile');
+
+// const emailValue = form.getElementById('email-mobile').value;
+
+// if (!emailValue.test(/^\[a-zA-Z0-9\._]+)@([a-zA-Z0-9]+.([a-z]+).[a-z]+)?$/)) {
+//   const error = form.querySelector('small');
+//   error.innerHTML = 'no'
+// }
+
+// form.addEventListener('submit', function (event) {
+//   event.preventDefault();
+
+// });
+
+//   const isRequired = value => value === '' ? false : true;
+  
+//   const isEmailValid = (email) => {
+//     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return re.test(email);
+// };
