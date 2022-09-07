@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
       button2: 'https://www.facebook.com',
       imgClass: 'img-project1',
       buttonId: 'btnPopup1',
+      imgPop: 'img/background-popup.svg',
     },
     {
       title: '2 - Keeping track of hundreds of components - 2',
@@ -37,19 +38,21 @@ window.addEventListener('DOMContentLoaded', () => {
       button2: 'link2',
       imgClass: 'img-project2',
       buttonId: 'btnPopup2',
+      imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 3',
+      title: '3 - Keeping track of hundreds of components - 3',
       image: 'img/test.png',
-      badge1: 'Ruby on rails',
-      badge2: 'CSS',
-      badge3: 'JavaScript',
-      badge4: 'HTML',
+      badge1: '3 - Ruby on rails',
+      badge2: '3 - CSS',
+      badge3: '3 - JavaScript',
+      badge4: '3 - HTML',
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
       buttons1: 'link',
       button2: 'link2',
       imgClass: 'img-project3',
       buttonId: 'btnPopup3',
+      imgPop: 'img/background-popup.svg',
     },
     {
       title: 'Keeping track of hundreds of components - 4',
@@ -63,6 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
       button2: 'link2',
       imgClass: 'img-project4',
       buttonId: 'btnPopup4',
+      imgPop: 'img/background-popup.svg',
     },
     {
       title: 'Keeping track of hundreds of components - 5',
@@ -76,6 +80,7 @@ window.addEventListener('DOMContentLoaded', () => {
       button2: 'link2',
       imgClass: 'img-project5',
       buttonId: 'btnPopup5',
+      imgPop: 'img/background-popup.svg',
     },
     {
       title: 'Keeping track of hundreds of components - 6',
@@ -89,6 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
       button2: 'link2',
       imgClass: 'img-project6',
       buttonId: 'btnPopup6',
+      imgPop: 'img/background-popup.svg',
     },
   ];
 
@@ -312,7 +318,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const sectionContainer = document.getElementById('mobile-popup-section');
   function openPopup(workNumber) {
     const i = workNumber;
-    document.getElementById('img-pop').src = projects[i].image;
+    document.getElementById('img-pop').src = projects[i].imgPop;
     document.getElementById('h3-popup').innerHTML = projects[i].title;
     document.getElementById('badge1').innerHTML = projects[i].badge1;
     document.getElementById('badge2').innerHTML = projects[i].badge2;

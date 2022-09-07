@@ -385,8 +385,9 @@ body {
   background-color: #fff;
   flex-direction: column;
   border-radius: 20px;
-  gap: 1.5em;
+  gap: 0.5em;
   max-width: 100%;
+  max-height: 100vh;
   z-index: 2;
 }
 
@@ -411,6 +412,7 @@ body {
 .mobile-popup h3 {
   font-size: 32px;
   color: #172b4d;
+  margin-top:;
   margin-left: 0.5em;
   margin-right: 1.9em;
 }
@@ -426,6 +428,7 @@ body {
 .mobile-popup p {
   text-align: left;
   min-width: 65%;
+  margin-top: -0.5em;
 }
 
 .details-popup ul {
@@ -459,6 +462,7 @@ body {
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  margin-top: -1.5em;
   min-width: 80%;
   gap: 1.2em;
 }
@@ -511,26 +515,28 @@ body {
     display: flex;
     align-self: center;
     position: fixed;
-    margin-top: 3.5em;
+    margin-top: 3em;
     margin-bottom: 3.5em;
     background-color: #fff;
     flex-direction: column;
     height: 90%;
     gap: 1.2em;
-    max-width: 42%;
+    max-width: 55%;
   }
 
   .details-popup {
     max-width: 95%;
     align-self: flex-start;
     margin-left: 1.2em;
+    margin-top: -1.5em;
   }
 
   .close-popup {
     align-self: flex-end;
-    padding: 0.5em;
+    padding: 0.2em;
     margin-inline: 3em;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
     background-color: #ebecf0;
   }
 
@@ -542,24 +548,30 @@ body {
   }
 
   .mobile-popup img {
-    margin-top: -1em;
-    padding: 1em;
-    max-height: 50vh;
+    margin-top: -0.6em;
+    padding: 0;
+    min-width: 70%;
+    min-height: 100px;
+
   }
 
   .mobile-popup h3 {
-    font-size: 32px;
+    font-size: 28px;
     color: #172b4d;
     margin-left: 0;
     margin-right: 0;
   }
 
+  .mobile-popup p {
+    font-size: 16px;
+    min-height: 20%;
+  }
+
   .main-popup {
     display: flex;
     align-items: flex-start;
-    max-width: 100%;
+    min-width: 10%;
     padding-inline: 1.5em;
-    margin-top: -2em;
   }
 
   .btn-container-desktop {
