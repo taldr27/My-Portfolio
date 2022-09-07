@@ -80,21 +80,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   ];
   function toggleBarWorks(workNumber) {
-    const y = document.getElementById('mobile-popup');
-    let i = 0;
-    if (workNumber === 1) {
-      i = 0;
-    } else if (workNumber === 2) {
-      i = 1;
-    } else if (workNumber === 3) {
-      i = 2;
-    } else if (workNumber === 4) {
-      i = 3;
-    } else if (workNumber === 5) {
-      i = 4;
-    } else if (workNumber === 6) {
-      i = 5;
-    }
+    const y = document.getElementById('mobile-popup-section');
+    const i = workNumber;
     document.getElementById('img-pop').src = projects[i].image;
     document.getElementById('h3-popup').innerHTML = projects[i].title;
     document.getElementById('badge1').innerHTML = projects[i].badge1;
@@ -112,11 +99,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  document.getElementById('xbut').addEventListener('click', toggleBarWorks);
-  document.getElementById('btnPopup1').addEventListener('click', () => { toggleBarWorks(1); });
-  document.getElementById('btnPopup2').addEventListener('click', () => { toggleBarWorks(2); });
-  document.getElementById('btnPopup3').addEventListener('click', () => { toggleBarWorks(3); });
-  document.getElementById('btnPopup4').addEventListener('click', () => { toggleBarWorks(4); });
-  document.getElementById('btnPopup5').addEventListener('click', () => { toggleBarWorks(5); });
-  document.getElementById('btnPopup6').addEventListener('click', () => { toggleBarWorks(6); });
+  document.getElementById('xbut').addEventListener('click', () => { toggleBarWorks(0); });
+  document.getElementById('btnPopup1').addEventListener('click', () => { toggleBarWorks(0); });
+  document.getElementById('btnPopup2').addEventListener('click', () => { toggleBarWorks(1); });
+  document.getElementById('btnPopup3').addEventListener('click', () => { toggleBarWorks(2); });
+  document.getElementById('btnPopup4').addEventListener('click', () => { toggleBarWorks(3); });
+  document.getElementById('btnPopup5').addEventListener('click', () => { toggleBarWorks(4); });
+  document.getElementById('btnPopup6').addEventListener('click', () => { toggleBarWorks(5); });
 });
