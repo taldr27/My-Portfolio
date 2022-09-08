@@ -358,12 +358,12 @@ const error1 = document.getElementById('error1');
 form.addEventListener('submit', (event) => {
   if (email.value.toLowerCase() !== email.value) {
     event.preventDefault();
-    error.innerHTML = 'Set it in lower case';
+    error.innerHTML = 'Set Email in lower case, please';
   }
 });
 form1.addEventListener('submit', (e) => {
   if (emailD.value.toLowerCase() !== emailD.value) {
     e.preventDefault();
-    error1.innerHTML = 'Set it in lower case';
+    error1.innerHTML = 'Set Email in lower case, please';
   }
 });

@@ -974,12 +974,8 @@ footer .social-desktop {
     padding-bottom: 0;
   }
 
-  .form-field.error input {
-    border-color: #dc3545;
-  }
-
-  .form-field.success input {
-    border-color: #28a745;
+  .form-error {
+    color: #dc3545;
   }
 
   footer .social-desktop {
