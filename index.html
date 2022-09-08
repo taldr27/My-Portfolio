@@ -20,34 +20,33 @@
 </head>
 <body>
     
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
 
         <header class="header">
             <nav class="toggle-menu">
                 <ul class="hide-menu" id="hide-menu">
-                    <li class="x"><i class="fa-solid fa-xmark" onclick="myFunction()"></i></li>
+                    <li class="x"><i id="close-nav" class="fa-solid fa-xmark"></i></li>
                     <li>
-                        <a href="#portfolio" onclick="myFunction()">Portfolio</a>
+                        <a href="#portfolio" onclick="toggleBar()">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#about" onclick="myFunction()">About</a>
+                        <a href="#about" onclick="toggleBar()">About</a>
                     </li>
                     <li>
-                        <a href="#contact" onclick="myFunction()">Contact</a>
+                        <a href="#contact" onclick="toggleBar()">Contact</a>
                     </li>
                 </ul>
-                
             </nav>
             <div class="header-mobile">
                 <a class="welcome" href="#"><h1>Welcome!</h1></a>
                 <a class="burger" id="burger">
-                    <i class="fa-solid fa-bars fa-lg" onclick="myFunction()"></i>
+                    <i class="fa-solid fa-bars fa-lg"></i>
                 </a>
             </div>
 
         </header>
 
-        <section class="land-page">
+        <section class="land-page" id="land">
             <ul class="header-desktop">
                 <li>
                     <a href="#portfolio">Portfolio</a>
@@ -71,7 +70,7 @@
                 <div>
                     <ul class="social">
                         <li>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -92,93 +91,8 @@
             </div>
         </section>
         
-        <section class="my-recent-works" id="portfolio">        
-                <div>
-                    <h2 class="works">My Recent Works</h2>
-                    <img class="line" alt="line-img" src="img/line.svg" />
-                </div>
-                <section class="projects-container">
-                    <div class="project-box">
-                        <img class="img-project1" alt="project1-image" src="img/test.png" />
-                        <div class="project-details">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                            <ul>
-                                <li><a href="#">Ruby on rails</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">HTML</a></li>
-                            </ul>
-                            <button class="button">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <img class="img-project2" alt="project2-image" src="img/test.png" />
-                        <div class="project-details">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                            <ul>
-                                <li><a href="#">Ruby on rails</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">HTML</a></li>
-                            </ul>
-                            <button class="button">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <img class="img-project3" alt="project3-image" src="img/test.png" />
-                        <div class="project-details">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                            <ul>
-                                <li><a href="#">Ruby on rails</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">HTML</a></li>
-                            </ul>
-                            <button class="button">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <img class="img-project4" alt="project4-image" src="img/test.png" />
-                        <div class="project-details">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                            <ul>
-                                <li><a href="#">Ruby on rails</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">HTML</a></li>
-                            </ul>
-                            <button class="button">See Project</button>
-                        </div>   
-                    </div>
-                    <div class="project-box">
-                        <img class="img-project5" alt="project5-image" src="img/test.png" />
-                        <div class="project-details">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                            <ul>
-                                <li><a href="#">Ruby on rails</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">HTML</a></li>
-                            </ul>
-                            <button class="button">See Project</button>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <img class="img-project5" alt="project5-image" src="img/test.png" />
-                        <div class="project-details">
-                            <h3>Multi-Post Stories Gain+Glory</h3>
-                            <ul>
-                                <li><a href="#">Ruby on rails</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">HTML</a></li>
-                            </ul>
-                            <button class="button">See Project</button>
-                        </div>
-                    </div>
-                </section>
-        </section>
 
+        
         <section class="about" id="about">
             <div class="about-main">
                 <p class="name">About me</p>

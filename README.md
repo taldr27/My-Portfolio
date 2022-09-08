@@ -2,13 +2,13 @@
 
 # Portfolio-Project
 
-> This project will contain a portfolio.
-
+> This project will contain my personal portfolio.
 
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 
@@ -16,11 +16,7 @@
 - Open the .html
 
 ### Live GitHub Page
-- https://taldr27.github.io/
-
-### Setup
-
-- Go to: 
+- https://taldr27.github.io/portfolio-project
 
 ## Authors
 
@@ -35,6 +31,10 @@
 👤 **Author3**
 
 - GitHub: [@cvalencia1991](https://github.com/cvalencia1991)
+
+👤 **Author4**
+
+- GitHub: [@IngDavidTM](https://github.com/IngDavidTM)
 
 ## 🤝 Contributing
 
