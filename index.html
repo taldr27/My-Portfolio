@@ -145,9 +145,9 @@
 
                     <div class="form-contact-mobile" id="form-contact-mobile">
                         <form class="contact-form" id="contactFormMobile" action="https://formspree.io/f/xayknejl" method="post">
-                            <input type="text" name="name" maxlength="30" placeholder="Full Name" autocomplete="off" required>
+                            <input type="text" id="name-mobile" name="name" maxlength="30" placeholder="Full Name" autocomplete="off" required>
                             <input type="email-mobile" name="email-mobile" id="email-mobile" placeholder="Email address" autocomplete="off" required>
-                            <textarea placeholder="Enter text here" rows="7" maxlength="500" ></textarea>
+                            <textarea id="textarea-mobile" placeholder="Enter text here" rows="7" maxlength="500" ></textarea>
                             <button type="submit" class="buttom-contact-form">Get in touch</button>
                             <span class="form-error" id="error"></span>
                         </form>
@@ -155,7 +155,7 @@
                     <div class="form-contact-desktop" id="form-contact-desktop">
                         <form class="contact-form2" action="https://formspree.io/f/xayknejl" method="post">
                             <div class="names">
-                                <div class="name-text"><input type="text" name="name" maxlength="30" placeholder="First Name" autocomplete="off" required></div>
+                                <div class="name-text"><input type="text" id="name-desktop" name="name" maxlength="30" placeholder="First Name" autocomplete="off" required></div>
                                 
                                 <div class="last-text"><input type="text" name="lastname" maxlength="30" placeholder="Last Name" autocomplete="off" required></div>
                                 
@@ -165,7 +165,7 @@
                                 
                             </div>
                             
-                            <textarea placeholder="Type something" rows="7" maxlength="500" required></textarea>
+                            <textarea id="textarea-desktop" placeholder="Type something" rows="7" maxlength="500" required></textarea>
                             <button type="submit" class="buttom-contact-form" >Get in touch</button>
                             <span class="form-error" id="error1"></span>
                         </form>

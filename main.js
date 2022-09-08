@@ -350,9 +350,15 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 const form = document.getElementById('form-contact-mobile');
-const form1 = document.getElementById('form-contact-desktop');
+const nameM = document.getElementById('name-mobile');
 const email = document.getElementById('email-mobile');
+const textarea = document.getElementById('textarea-mobile');
+
+const form1 = document.getElementById('form-contact-desktop');
+const nameD = document.getElementById('name-desktop');
 const emailD = document.getElementById('email');
+const textareaD = document.getElementById('textarea-desktop');
+
 const error = document.getElementById('error');
 const error1 = document.getElementById('error1');
 form.addEventListener('submit', (event) => {
@@ -367,3 +373,36 @@ form1.addEventListener('submit', (e) => {
     error1.innerHTML = 'Set Email in lower case, please';
   }
 });
+
+let object1 = '';
+let object2 = '';
+let object3 = '';
+
+function stored() {
+  localStorage.setItem('nameM', document.getElementById('name-mobile').value);
+  localStorage.setItem('email', document.getElementById('email-mobile').value);
+  localStorage.setItem('textarea', document.getElementById('textarea-mobile').value);
+}
+
+function setData() {
+  object1 = localStorage.getItem('nameM');
+  document.getElementById('name-mobile').value = object1;
+
+  object2 = localStorage.getItem('email');
+  document.getElementById('email-mobile').value = object2;
+
+  object3 = localStorage.getItem('textarea');
+  document.getElementById('textarea-mobile').value = object3;
+}
+
+const mainObj = {
+  name: object1,
+  email: object2,
+  text: object3,
+}
+
+console.log(mainObj);
+
+window.onload = setData();
+
+form.addEventListener('input', stored);
