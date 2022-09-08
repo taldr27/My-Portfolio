@@ -374,35 +374,58 @@ form1.addEventListener('submit', (e) => {
   }
 });
 
-let object1 = '';
-let object2 = '';
-let object3 = '';
+const mainObj = {
+  input: '',
+  input2: '',
+  input3: '',
+};
 
 function stored() {
-  localStorage.setItem('nameM', document.getElementById('name-mobile').value);
-  localStorage.setItem('email', document.getElementById('email-mobile').value);
-  localStorage.setItem('textarea', document.getElementById('textarea-mobile').value);
+  const obj1 = document.getElementById('name-mobile').value;
+  const obj2 = document.getElementById('email-mobile').value;
+  const obj3 = document.getElementById('textarea-mobile').value;
+  mainObj.input = obj1;
+  mainObj.input2 = obj2;
+  mainObj.input3 = obj3;
+  const mainObjString = JSON.stringify(mainObj);
+  localStorage.setItem('main', mainObjString);
 }
 
 function setData() {
-  object1 = localStorage.getItem('nameM');
-  document.getElementById('name-mobile').value = object1;
-
-  object2 = localStorage.getItem('email');
-  document.getElementById('email-mobile').value = object2;
-
-  object3 = localStorage.getItem('textarea');
-  document.getElementById('textarea-mobile').value = object3;
+  const objGet = JSON.parse(localStorage.getItem('main'));
+  document.getElementById('name-mobile').value = objGet.input;
+  document.getElementById('email-mobile').value = objGet.input2;
+  document.getElementById('textarea-mobile').value = objGet.input3;
 }
-
-const mainObj = {
-  name: object1,
-  email: object2,
-  text: object3,
-}
-
-console.log(mainObj);
 
 window.onload = setData();
 
 form.addEventListener('input', stored);
+
+const mainObjD = {
+  input1: '',
+  input2: '',
+  input3: '',
+};
+
+function storedD() {
+  const obj1D = document.getElementById('name-desktop').value;
+  const obj2D = document.getElementById('email').value;
+  const obj3D = document.getElementById('textarea-desktop').value;
+  mainObjD.input1 = obj1D;
+  mainObjD.input2 = obj2D;
+  mainObjD.input3 = obj3D;
+  const mainObjStringD = JSON.stringify(mainObjD);
+  localStorage.setItem('main2', mainObjStringD);
+}
+
+function setDataD() {
+  const objGetD = JSON.parse(localStorage.getItem('main2'));
+  document.getElementById('name-desktop').value = objGetD.input1;
+  document.getElementById('email').value = objGetD.input2;
+  document.getElementById('textarea-desktop').value = objGetD.input3;
+}
+
+window.onload = setDataD();
+
+form1.addEventListener('input', storedD);
