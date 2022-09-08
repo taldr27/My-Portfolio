@@ -972,16 +972,15 @@ footer .social-desktop {
     border-top: 1px solid lightgray;
     width: 100%;
     padding-bottom: 0;
-    
   }
 
   .form-field.error input {
     border-color: #dc3545;
-}
+  }
 
-.form-field.success input {
+  .form-field.success input {
     border-color: #28a745;
-}
+  }
 
   footer .social-desktop {
     /* - */
