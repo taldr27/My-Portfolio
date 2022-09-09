@@ -315,7 +315,7 @@ window.addEventListener('DOMContentLoaded', () => {
     mainDiv3.appendChild(div3A2);
   }
   window.onload = Addnew();
-  const sectionContainer = document.getElementById('mobile-popup-section');
+  const sectionContainer = document.getElementById('mobile-popp-section');
   function openPopup(workNumber) {
     const i = workNumber;
     document.getElementById('img-pop').src = projects[i].imgPop;
@@ -324,7 +324,7 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('badge2').innerHTML = projects[i].badge2;
     document.getElementById('badge3').innerHTML = projects[i].badge3;
     document.getElementById('badge4').innerHTML = projects[i].badge4;
-    document.getElementById('p-pop').innerHTML = projects[i].description;
+    document.getElementById('p-pp').innerHTML = projects[i].description;
     document.getElementById('btn-1').href = projects[i].button1;
     document.getElementById('btn-2').href = projects[i].button2;
     document.getElementById('x-but').addEventListener('click', () => { sectionContainer.style.display = 'none'; });
@@ -347,85 +347,50 @@ window.addEventListener('DOMContentLoaded', () => {
   b5.addEventListener('click', () => { openPopup(4); });
   const b6 = document.getElementById('btnPopup6');
   b6.addEventListener('click', () => { openPopup(5); });
-});
 
-const form = document.getElementById('form-contact-mobile');
-const nameM = document.getElementById('name-mobile');
-const email = document.getElementById('email-mobile');
-const textarea = document.getElementById('textarea-mobile');
+  const form = document.getElementById('form-contact-mobile');
+  const email = document.getElementById('email-mobile');
 
-const form1 = document.getElementById('form-contact-desktop');
-const nameD = document.getElementById('name-desktop');
-const emailD = document.getElementById('email');
-const textareaD = document.getElementById('textarea-desktop');
+  const form1 = document.getElementById('form-contact-desktop');
+  const emailD = document.getElementById('email');
 
-const error = document.getElementById('error');
-const error1 = document.getElementById('error1');
-form.addEventListener('submit', (event) => {
-  if (email.value.toLowerCase() !== email.value) {
-    event.preventDefault();
-    error.innerHTML = 'Set Email in lower case, please';
+  const error = document.getElementById('error');
+  const error1 = document.getElementById('error1');
+  form.addEventListener('submit', (event) => {
+    if (email.value.toLowerCase() !== email.value) {
+      event.preventDefault();
+      error.innerHTML = 'Set Email in lower case, please';
+    }
+  });
+  form1.addEventListener('submit', (e) => {
+    if (emailD.value.toLowerCase() !== emailD.value) {
+      e.preventDefault();
+      error1.innerHTML = 'Set Email in lower case, please';
+    }
+  });
+
+  const mainObj = {
+    input: '',
+    input2: '',
+    input3: '',
+  };
+
+  function stored() {
+    const obj1 = document.getElementById('name-mobile').value;
+    const obj2 = document.getElementById('email-mobile').value;
+    const obj3 = document.getElementById('textarea-mobile').value;
+    mainObj.input = obj1;
+    mainObj.input2 = obj2;
+    mainObj.input3 = obj3;
+    const mainObjString = JSON.stringify(mainObj);
+    localStorage.setItem('main', mainObjString);
+}
+  form.addEventListener('input', stored);
+  function setData() {
+    const objGet = JSON.parse(localStorage.getItem('main'));
+    document.getElementById('name-mobile').value = objGet.input;
+    document.getElementById('email-mobile').value = objGet.input2;
+    document.getElementById('textarea-mobile').value = objGet.input3;
   }
+
 });
-form1.addEventListener('submit', (e) => {
-  if (emailD.value.toLowerCase() !== emailD.value) {
-    e.preventDefault();
-    error1.innerHTML = 'Set Email in lower case, please';
-  }
-});
-
-const mainObj = {
-  input: '',
-  input2: '',
-  input3: '',
-};
-
-function stored() {
-  const obj1 = document.getElementById('name-mobile').value;
-  const obj2 = document.getElementById('email-mobile').value;
-  const obj3 = document.getElementById('textarea-mobile').value;
-  mainObj.input = obj1;
-  mainObj.input2 = obj2;
-  mainObj.input3 = obj3;
-  const mainObjString = JSON.stringify(mainObj);
-  localStorage.setItem('main', mainObjString);
-}
-
-function setData() {
-  const objGet = JSON.parse(localStorage.getItem('main'));
-  document.getElementById('name-mobile').value = objGet.input;
-  document.getElementById('email-mobile').value = objGet.input2;
-  document.getElementById('textarea-mobile').value = objGet.input3;
-}
-
-window.onload = setData();
-
-form.addEventListener('input', stored);
-
-const mainObjD = {
-  input1: '',
-  input2: '',
-  input3: '',
-};
-
-function storedD() {
-  const obj1D = document.getElementById('name-desktop').value;
-  const obj2D = document.getElementById('email').value;
-  const obj3D = document.getElementById('textarea-desktop').value;
-  mainObjD.input1 = obj1D;
-  mainObjD.input2 = obj2D;
-  mainObjD.input3 = obj3D;
-  const mainObjStringD = JSON.stringify(mainObjD);
-  localStorage.setItem('main2', mainObjStringD);
-}
-
-function setDataD() {
-  const objGetD = JSON.parse(localStorage.getItem('main2'));
-  document.getElementById('name-desktop').value = objGetD.input1;
-  document.getElementById('email').value = objGetD.input2;
-  document.getElementById('textarea-desktop').value = objGetD.input3;
-}
-
-window.onload = setDataD();
-
-form1.addEventListener('input', storedD);
