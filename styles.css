@@ -550,6 +550,8 @@ body {
     margin-top: -0.6em;
     padding: 0;
     min-width: 70%;
+    max-width: 100%;
+    align-self: center;
     min-height: 100px;
   }
 

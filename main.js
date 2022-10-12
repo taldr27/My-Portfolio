@@ -13,21 +13,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const projects = [
     {
-      title: 'Keeping track of hundreds of components - 1',
-      image: 'img/test.png',
-      badge1: '1 - Ruby on rails',
-      badge2: '1 - CSS',
-      badge3: '1 - JavaScript',
-      badge4: '1 - HTML',
+      title: 'Awesome Books',
+      image: 'img/ssAwesomeBooks.png',
+      badge1: 'HTML',
+      badge2: 'CSS',
+      badge3: 'JavaScript',
       description: '1 - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'https://www.google.com',
-      button2: 'https://www.facebook.com',
+      button1: 'https://taldr27.github.io/Awesome-Books/',
+      button2: 'https://github.com/taldr27/Awesome-Books',
       imgClass: 'img-project1',
       buttonId: 'btnPopup1',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/ssAwesomeBooks.png',
     },
     {
-      title: '2 - Keeping track of hundreds of components - 2',
+      title: 'Keeping track',
       image: 'img/test.png',
       badge1: '2 - Ruby on rails',
       badge2: '2 - CSS',
@@ -41,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: '3 - Keeping track of hundreds of components - 3',
+      title: 'Keeping track',
       image: 'img/test.png',
       badge1: '3 - Ruby on rails',
       badge2: '3 - CSS',
@@ -55,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 4',
+      title: 'Keeping track',
       image: 'img/test.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
@@ -69,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 5',
+      title: 'Keeping track',
       image: 'img/test.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
@@ -83,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 6',
+      title: 'Keeping track',
       image: 'img/test.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
@@ -140,7 +139,7 @@ window.addEventListener('DOMContentLoaded', () => {
       projectBoxDiv1.appendChild(projectDetails);
 
       const h3P = document.createElement('h3');
-      h3P.innerHTML = 'Multi-Post Stories Gain+Glory';
+      h3P.innerHTML = projects[i].title;
       projectDetails.appendChild(h3P);
 
       const ulP = document.createElement('ul');
@@ -173,10 +172,10 @@ window.addEventListener('DOMContentLoaded', () => {
       const liP4 = document.createElement('li');
       ulP.appendChild(liP4);
 
-      const ali4 = document.createElement('a');
-      ali4.href = '#';
-      ali4.innerHTML = projects[i].badge4;
-      liP4.appendChild(ali4);
+      // const ali4 = document.createElement('a');
+      // ali4.href = '#';
+      // ali4.innerHTML = projects[i].badge4;
+      // liP4.appendChild(ali4);
 
       const btnProject = document.createElement('button');
       btnProject.id = projects[i].buttonId;
@@ -233,11 +232,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const div1Div2 = document.createElement('div');
     div1Div2.className = 'btn-container-desktop';
     mainDiv1.appendChild(div1Div2);
-
+    
     const divDiv2A1 = document.createElement('a');
     divDiv2A1.id = 'btn-1';
     divDiv2A1.className = 'button btn-popup';
-    divDiv2A1.innerHTML = 'See live     ';
+    divDiv2A1.innerHTML = 'See live';
+
     div1Div2.appendChild(divDiv2A1);
 
     const div2A1I = document.createElement('i');
@@ -248,6 +248,7 @@ window.addEventListener('DOMContentLoaded', () => {
     divDiv2A2.id = 'btn-2';
     divDiv2A2.className = 'button btn-popup';
     divDiv2A2.innerHTML = 'See source ';
+
     div1Div2.appendChild(divDiv2A2);
 
     const div2A2I = document.createElement('i');
