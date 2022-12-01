@@ -390,7 +390,7 @@ body {
 
 .mobile-popup {
   display: flex;
-  top: 0;
+  top: 10px;
   position: fixed;
   background-color: #fff;
   flex-direction: column;
@@ -399,6 +399,7 @@ body {
   max-width: 100%;
   height: 90vh;
   z-index: 2;
+  border: 1px solid rgba(128, 128, 128, 0.514);
 }
 
 .mobile-popup img {
@@ -426,18 +427,10 @@ body {
   margin-right: 1.9em;
 }
 
-.mobile-popup p {
-  color: #344563;
-  max-width: 92%;
-  align-self: center;
-  line-height: 24px;
-}
-
-.mobile-popup h3,
-.mobile-popup p {
+.p-pop {
   text-align: left;
-  min-width: 65%;
-  margin-top: -0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .details-popup ul {

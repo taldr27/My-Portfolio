@@ -22,9 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
       badge2: 'CSS',
       badge3: 'JavaScript',
       badge4: 'HTML',
-      description: '1 - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'https://www.google.com',
-      button2: 'https://www.facebook.com',
+      description: 'This repository contains a manager for your books, you can add and remove the books that you have already read. This project was created using JavaScript, HTML, and CSS.',
+      button1: 'https://taldr27.github.io/Awesome-Books/',
+      button2: 'https://github.com/taldr27/Awesome-Books',
       imgClass: 'img-project1',
       buttonId: 'btnPopup1',
       imgPop: 'img/AwesomeBooks.png',
@@ -36,9 +36,9 @@ window.addEventListener('DOMContentLoaded', () => {
       badge2: 'HTML',
       badge3: 'JavaScript',
       badge4: 'CSS',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      description: 'In this project you can add new scores to a Scoreboard, made it using JavaScript and an API.',
+      button1: 'https://taldr27.github.io/Leaderboard/dist/',
+      button2: 'https://github.com/taldr27/Leaderboard',
       imgClass: 'img-project2',
       buttonId: 'btnPopup2',
       imgPop: 'img/leaderboard.png',
@@ -50,9 +50,9 @@ window.addEventListener('DOMContentLoaded', () => {
       badge2: 'Redux',
       badge3: 'HTML',
       badge4: 'APIS',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      description: 'This was a collaborative project using the API from Space X, this project allows you to reserve rockets and missions and you are also able to display them in the Profile section.',
+      button1: 'https://deploy-preview-38--singular-maamoul-ab8f49.netlify.app/',
+      button2: 'https://github.com/taldr27/space-travelers',
       imgClass: 'img-project3',
       buttonId: 'btnPopup3',
       imgPop: 'img/rocket.png',
@@ -64,9 +64,9 @@ window.addEventListener('DOMContentLoaded', () => {
       badge2: 'Redux',
       badge3: 'APIS',
       badge4: 'HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      description: 'This Bookstore is a SPA project that allows you to display a list of books, add new ones, and also delete them it was developed with React and Redux.',
+      button1: 'https://poetic-florentine-b20720.netlify.app/',
+      button2: 'https://github.com/taldr27/BookStore',
       imgClass: 'img-project4',
       buttonId: 'btnPopup4',
       imgPop: 'img/book.png',
@@ -78,9 +78,9 @@ window.addEventListener('DOMContentLoaded', () => {
       badge2: 'CSS',
       badge3: 'JavaScript',
       badge4: 'HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      description: 'Math Magicians is a SPA project where you can use a calculator made with React and JavaScript.',
+      button1: 'https://zingy-malabi-151a57.netlify.app',
+      button2: 'https://github.com/taldr27/Math-Magicians',
       imgClass: 'img-project5',
       buttonId: 'btnPopup5',
       imgPop: 'img/math.png',
@@ -92,9 +92,9 @@ window.addEventListener('DOMContentLoaded', () => {
       badge2: 'CSS',
       badge3: 'JavaScript',
       badge4: 'HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      button1: 'link',
-      button2: 'link2',
+      description: 'This is a webpage that displays tv shows from a REST API. It allows a user to like and comment on their favourite shows. The number of comments, likes and the description in the comments which includes date and name are sent to APIs too.',
+      button1: 'https://haywayaheadshot.github.io/javascript-capstone/',
+      button2: 'https://github.com/Haywayaheadshot/javascript-capstone/',
       imgClass: 'img-project6',
       buttonId: 'btnPopup6',
       imgPop: 'img/movi1.png',
@@ -236,26 +236,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const div1Div2 = document.createElement('div');
     div1Div2.className = 'btn-container-desktop';
     mainDiv1.appendChild(div1Div2);
-
-    const divDiv2A1 = document.createElement('a');
-    divDiv2A1.id = 'btn-1';
-    divDiv2A1.className = 'button btn-popup';
-    divDiv2A1.innerHTML = 'See live     ';
-    div1Div2.appendChild(divDiv2A1);
-
-    const div2A1I = document.createElement('i');
-    div2A1I.className = 'fa-solid fa-arrow-up-right-from-square';
-    divDiv2A1.appendChild(div2A1I);
-
-    const divDiv2A2 = document.createElement('a');
-    divDiv2A2.id = 'btn-2';
-    divDiv2A2.className = 'button btn-popup';
-    divDiv2A2.innerHTML = 'See source ';
-    div1Div2.appendChild(divDiv2A2);
-
-    const div2A2I = document.createElement('i');
-    div2A2I.className = 'fa-brands fa-github';
-    divDiv2A2.appendChild(div2A2I);
 
     const mainDiv2 = document.createElement('div');
     mainDiv2.className = 'details-popup divPop';
