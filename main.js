@@ -1,100 +1,102 @@
 window.addEventListener('DOMContentLoaded', () => {
+  // Function to show the burger on mobile
   function toggleBar() {
-    const x = document.getElementById('hide-menu');
-    if (x.style.display === 'none') {
-      x.style.display = 'flex';
+    const burgerButton = document.querySelector('.toggle-menu');
+    if (burgerButton.style.display === 'flex') {
+      burgerButton.style.display = 'none';
     } else {
-      x.style.display = 'none';
+      burgerButton.style.display = 'flex';
     }
   }
 
   document.getElementById('burger').addEventListener('click', toggleBar);
   document.getElementById('close-nav').addEventListener('click', toggleBar);
 
+  // Define the array of objects containing the projects
   const projects = [
     {
-      title: 'Keeping track of hundreds of components - 1',
-      image: 'img/test.png',
-      badge1: '1 - Ruby on rails',
-      badge2: '1 - CSS',
-      badge3: '1 - JavaScript',
-      badge4: '1 - HTML',
-      description: '1 - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'https://www.google.com',
-      button2: 'https://www.facebook.com',
+      title: 'Awesome Books',
+      image: 'img/AwesomeBooks.png',
+      badge1: 'GitHub',
+      badge2: 'CSS',
+      badge3: 'JavaScript',
+      badge4: 'HTML',
+      description: 'This repository contains a manager for your books, you can add and remove the books that you have already read. This project was created using JavaScript, HTML, and CSS.',
+      button1: 'https://taldr27.github.io/Awesome-Books/',
+      button2: 'https://github.com/taldr27/Awesome-Books',
       imgClass: 'img-project1',
       buttonId: 'btnPopup1',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/AwesomeBooks.png',
     },
     {
-      title: '2 - Keeping track of hundreds of components - 2',
-      image: 'img/test.png',
-      badge1: '2 - Ruby on rails',
-      badge2: '2 - CSS',
-      badge3: '2 - JavaScript',
-      badge4: '2 - HTML',
-      description: '2 - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      title: 'LeaderBoard',
+      image: 'img/leaderboard.png',
+      badge1: 'APIS',
+      badge2: 'HTML',
+      badge3: 'JavaScript',
+      badge4: 'CSS',
+      description: 'In this project you can add new scores to a Scoreboard, made it using JavaScript and an API.',
+      button1: 'https://taldr27.github.io/Leaderboard/dist/',
+      button2: 'https://github.com/taldr27/Leaderboard',
       imgClass: 'img-project2',
       buttonId: 'btnPopup2',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/leaderboard.png',
     },
     {
-      title: '3 - Keeping track of hundreds of components - 3',
-      image: 'img/test.png',
-      badge1: '3 - Ruby on rails',
-      badge2: '3 - CSS',
-      badge3: '3 - JavaScript',
-      badge4: '3 - HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      title: 'Space-X',
+      image: 'img/rocket.png',
+      badge1: 'React',
+      badge2: 'Redux',
+      badge3: 'HTML',
+      badge4: 'APIS',
+      description: 'This was a collaborative project using the API from Space X, this project allows you to reserve rockets and missions and you are also able to display them in the Profile section.',
+      button1: 'https://deploy-preview-38--singular-maamoul-ab8f49.netlify.app/',
+      button2: 'https://github.com/taldr27/space-travelers',
       imgClass: 'img-project3',
       buttonId: 'btnPopup3',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/rocket.png',
     },
     {
-      title: 'Keeping track of hundreds of components - 4',
-      image: 'img/test.png',
-      badge1: 'Ruby on rails',
-      badge2: 'CSS',
-      badge3: 'JavaScript',
+      title: 'BookStore React',
+      image: 'img/book.png',
+      badge1: 'React',
+      badge2: 'Redux',
+      badge3: 'APIS',
       badge4: 'HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      description: 'This Bookstore is a SPA project that allows you to display a list of books, add new ones, and also delete them it was developed with React and Redux.',
+      button1: 'https://poetic-florentine-b20720.netlify.app/',
+      button2: 'https://github.com/taldr27/BookStore',
       imgClass: 'img-project4',
       buttonId: 'btnPopup4',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/book.png',
     },
     {
-      title: 'Keeping track of hundreds of components - 5',
-      image: 'img/test.png',
+      title: 'Math Magicians',
+      image: 'img/math.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
       badge3: 'JavaScript',
       badge4: 'HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      buttons1: 'link',
-      button2: 'link2',
+      description: 'Math Magicians is a SPA project where you can use a calculator made with React and JavaScript.',
+      button1: 'https://zingy-malabi-151a57.netlify.app',
+      button2: 'https://github.com/taldr27/Math-Magicians',
       imgClass: 'img-project5',
       buttonId: 'btnPopup5',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/math.png',
     },
     {
-      title: 'Keeping track of hundreds of components - 6',
-      image: 'img/test.png',
-      badge1: 'Ruby on rails',
+      title: 'Tv Magazine',
+      image: 'img/tv.png',
+      badge1: 'API',
       badge2: 'CSS',
       badge3: 'JavaScript',
       badge4: 'HTML',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-      button1: 'link',
-      button2: 'link2',
+      description: 'This is a webpage that displays tv shows from a REST API. It allows a user to like and comment on their favourite shows. The number of comments, likes and the description in the comments which includes date and name are sent to APIs too.',
+      button1: 'https://haywayaheadshot.github.io/javascript-capstone/',
+      button2: 'https://github.com/Haywayaheadshot/javascript-capstone/',
       imgClass: 'img-project6',
       buttonId: 'btnPopup6',
-      imgPop: 'img/background-popup.svg',
+      imgPop: 'img/movi1.png',
     },
   ];
 
@@ -140,7 +142,7 @@ window.addEventListener('DOMContentLoaded', () => {
       projectBoxDiv1.appendChild(projectDetails);
 
       const h3P = document.createElement('h3');
-      h3P.innerHTML = 'Multi-Post Stories Gain+Glory';
+      h3P.innerHTML = projects[i].title;
       projectDetails.appendChild(h3P);
 
       const ulP = document.createElement('ul');
@@ -234,25 +236,25 @@ window.addEventListener('DOMContentLoaded', () => {
     div1Div2.className = 'btn-container-desktop';
     mainDiv1.appendChild(div1Div2);
 
-    const divDiv2A1 = document.createElement('a');
-    divDiv2A1.id = 'btn-1';
-    divDiv2A1.className = 'button btn-popup';
-    divDiv2A1.innerHTML = 'See live     ';
-    div1Div2.appendChild(divDiv2A1);
+    const btnDesktopSee = document.createElement('a');
+    btnDesktopSee.id = 'btn-1';
+    btnDesktopSee.className = 'button btn-popup';
+    btnDesktopSee.innerHTML = 'See live     ';
+    div1Div2.appendChild(btnDesktopSee);
 
-    const div2A1I = document.createElement('i');
-    div2A1I.className = 'fa-solid fa-arrow-up-right-from-square';
-    divDiv2A1.appendChild(div2A1I);
+    const desktopArrow = document.createElement('i');
+    desktopArrow.className = 'fa-solid fa-arrow-up-right-from-square';
+    btnDesktopSee.appendChild(desktopArrow);
 
-    const divDiv2A2 = document.createElement('a');
-    divDiv2A2.id = 'btn-2';
-    divDiv2A2.className = 'button btn-popup';
-    divDiv2A2.innerHTML = 'See source ';
-    div1Div2.appendChild(divDiv2A2);
+    const btnDesktopSource = document.createElement('a');
+    btnDesktopSource.id = 'btn-2';
+    btnDesktopSource.className = 'button btn-popup';
+    btnDesktopSource.innerHTML = 'See source     ';
+    div1Div2.appendChild(btnDesktopSource);
 
-    const div2A2I = document.createElement('i');
-    div2A2I.className = 'fa-brands fa-github';
-    divDiv2A2.appendChild(div2A2I);
+    const desktopGit = document.createElement('i');
+    desktopGit.className = 'fa-brands fa-github';
+    btnDesktopSource.appendChild(desktopGit);
 
     const mainDiv2 = document.createElement('div');
     mainDiv2.className = 'details-popup divPop';
@@ -313,6 +315,10 @@ window.addEventListener('DOMContentLoaded', () => {
     div3A2.className = 'button btn-popup';
     div3A2.innerHTML = 'See source     ';
     mainDiv3.appendChild(div3A2);
+
+    const mobileGit = document.createElement('i');
+    mobileGit.className = 'fa-brands fa-github';
+    div3A2.appendChild(mobileGit);
   }
   window.onload = Addnew();
   const sectionContainer = document.getElementById('mobile-popup-section');

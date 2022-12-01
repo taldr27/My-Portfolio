@@ -5,6 +5,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   text-align: center;
   position: absolute;
@@ -16,8 +20,7 @@ body {
 
 /* Header section */
 .header-mobile {
-  margin-top: 3em;
-  margin-bottom: 0.6em;
+  margin-top: 2.5em;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -38,8 +41,12 @@ body {
   margin-right: 3em;
 }
 
-.hide-menu {
+.toggle-menu {
   display: none;
+}
+
+.hide-menu {
+  display: flex;
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -105,6 +112,10 @@ body {
   line-height: 52px;
   line-height: 107%;
   margin: 0 0 30px;
+}
+
+.resume {
+  color: white;
 }
 
 .land-page .description {
@@ -289,7 +300,8 @@ body {
 }
 
 .my-recent-works .projects-container {
-  display: inline-grid;
+  display: grid;
+  justify-items: center;
   padding-inline: 0.6em;
   margin-top: 3em;
   gap: 24px;
@@ -309,9 +321,15 @@ body {
   text-align: center;
 }
 
-.my-recent-works .project-box {
+.project-box {
   border: 2px solid #d0d9d4;
   border-radius: 5px;
+  min-width: 22em;
+}
+
+.project-box > img {
+  width: 100%;
+  height: 250px;
 }
 
 .projects-container a {
@@ -364,6 +382,7 @@ body {
   line-height: 117%;
   margin: 29px 103px 24px 103px;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -380,15 +399,16 @@ body {
 
 .mobile-popup {
   display: flex;
-  top: 0;
+  top: 10px;
   position: fixed;
   background-color: #fff;
   flex-direction: column;
   border-radius: 20px;
   gap: 0.5em;
   max-width: 100%;
-  max-height: 100vh;
+  height: 90vh;
   z-index: 2;
+  border: 1px solid rgba(128, 128, 128, 0.514);
 }
 
 .mobile-popup img {
@@ -416,18 +436,10 @@ body {
   margin-right: 1.9em;
 }
 
-.mobile-popup p {
-  color: #344563;
-  max-width: 92%;
-  align-self: center;
-  line-height: 24px;
-}
-
-.mobile-popup h3,
-.mobile-popup p {
+.p-pop {
   text-align: left;
-  min-width: 65%;
-  margin-top: -0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .details-popup ul {
@@ -520,14 +532,13 @@ body {
     flex-direction: column;
     height: 90%;
     gap: 1.2em;
-    max-width: 55%;
+    max-width: 60em;
   }
 
   .details-popup {
     max-width: 95%;
     align-self: flex-start;
     margin-left: 1.2em;
-    margin-top: -1.5em;
   }
 
   .close-popup {
@@ -544,6 +555,7 @@ body {
     position: static;
     text-align: right;
     font-size: 30px;
+    cursor: pointer;
   }
 
   .mobile-popup img {
@@ -567,7 +579,8 @@ body {
 
   .main-popup {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     min-width: 10%;
     padding-inline: 1.5em;
   }
@@ -818,7 +831,8 @@ body {
   margin-inline: auto;
   border: none;
   width: 129px;
-  z-index: 0;
+  z-index: -10;
+  cursor: pointer;
 }
 
 .buttom-contact-form:hover {
@@ -946,6 +960,10 @@ footer .social-desktop {
     padding: 0.9em;
     border-radius: 0.25em;
     border: 1.5px solid lightgray;
+  }
+
+  .emails {
+    margin-bottom: 1em;
   }
 
   .contact-form2 textarea {
