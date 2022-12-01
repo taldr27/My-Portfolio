@@ -1,19 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
+
+  // Function to show the burger on mobile
   function toggleBar() {
-    const x = document.getElementById('hide-menu');
-    if (x.style.display === 'none') {
-      x.style.display = 'flex';
+    const burgerButton = document.querySelector('.toggle-menu');
+    if (burgerButton.style.display === 'flex') {
+      burgerButton.style.display = 'none';
     } else {
-      x.style.display = 'none';
+      burgerButton.style.display = 'flex';
     }
   }
 
   document.getElementById('burger').addEventListener('click', toggleBar);
   document.getElementById('close-nav').addEventListener('click', toggleBar);
-
+  
   const projects = [
     {
-      title: 'Keeping track of hundreds of components - 1',
+      title: 'Awesome Books',
       image: 'img/test.png',
       badge1: '1 - Ruby on rails',
       badge2: '1 - CSS',
@@ -27,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: '2 - Keeping track of hundreds of components - 2',
+      title: 'LeaderBoard',
       image: 'img/test.png',
       badge1: '2 - Ruby on rails',
       badge2: '2 - CSS',
@@ -41,8 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: '3 - Keeping track of hundreds of components - 3',
-      image: 'img/test.png',
+      title: 'Space-X',
+      image: 'img/rockets.png',
       badge1: '3 - Ruby on rails',
       badge2: '3 - CSS',
       badge3: '3 - JavaScript',
@@ -55,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 4',
+      title: 'BookStore',
       image: 'img/test.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
@@ -69,8 +71,8 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 5',
-      image: 'img/test.png',
+      title: 'Math Magicians',
+      image: 'img/math.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
       badge3: 'JavaScript',
@@ -83,8 +85,8 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'Keeping track of hundreds of components - 6',
-      image: 'img/test.png',
+      title: 'Tv Magazine',
+      image: 'img/movi1.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
       badge3: 'JavaScript',
@@ -140,7 +142,7 @@ window.addEventListener('DOMContentLoaded', () => {
       projectBoxDiv1.appendChild(projectDetails);
 
       const h3P = document.createElement('h3');
-      h3P.innerHTML = 'Multi-Post Stories Gain+Glory';
+      h3P.innerHTML = projects[i].title;
       projectDetails.appendChild(h3P);
 
       const ulP = document.createElement('ul');
