@@ -832,6 +832,7 @@ body {
   border: none;
   width: 129px;
   z-index: -10;
+  cursor: pointer;
 }
 
 .buttom-contact-form:hover {
@@ -959,6 +960,10 @@ footer .social-desktop {
     padding: 0.9em;
     border-radius: 0.25em;
     border: 1.5px solid lightgray;
+  }
+
+  .emails {
+    margin-bottom: 1em;
   }
 
   .contact-form2 textarea {
