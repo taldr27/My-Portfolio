@@ -16,8 +16,7 @@ body {
 
 /* Header section */
 .header-mobile {
-  margin-top: 3em;
-  margin-bottom: 0.6em;
+  margin-top: 2.5em;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -827,7 +826,7 @@ body {
   margin-inline: auto;
   border: none;
   width: 129px;
-  z-index: 0;
+  z-index: -10;
 }
 
 .buttom-contact-form:hover {

@@ -13,10 +13,11 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('burger').addEventListener('click', toggleBar);
   document.getElementById('close-nav').addEventListener('click', toggleBar);
   
+  // Define the array of objects containing the projects
   const projects = [
     {
       title: 'Awesome Books',
-      image: 'img/test.png',
+      image: 'img/AwesomeBooks.png',
       badge1: '1 - Ruby on rails',
       badge2: '1 - CSS',
       badge3: '1 - JavaScript',
@@ -30,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     {
       title: 'LeaderBoard',
-      image: 'img/test.png',
+      image: 'img/leaderboard.png',
       badge1: '2 - Ruby on rails',
       badge2: '2 - CSS',
       badge3: '2 - JavaScript',
@@ -57,8 +58,8 @@ window.addEventListener('DOMContentLoaded', () => {
       imgPop: 'img/background-popup.svg',
     },
     {
-      title: 'BookStore',
-      image: 'img/test.png',
+      title: 'BookStore React',
+      image: 'img/bookreact.png',
       badge1: 'Ruby on rails',
       badge2: 'CSS',
       badge3: 'JavaScript',
