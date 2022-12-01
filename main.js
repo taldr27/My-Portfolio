@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-
   // Function to show the burger on mobile
   function toggleBar() {
     const burgerButton = document.querySelector('.toggle-menu');
@@ -12,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('burger').addEventListener('click', toggleBar);
   document.getElementById('close-nav').addEventListener('click', toggleBar);
-  
+
   // Define the array of objects containing the projects
   const projects = [
     {
