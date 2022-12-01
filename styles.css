@@ -5,6 +5,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   text-align: center;
   position: absolute;
@@ -108,6 +112,10 @@ body {
   line-height: 52px;
   line-height: 107%;
   margin: 0 0 30px;
+}
+
+.resume {
+  color: white;
 }
 
 .land-page .description {
@@ -374,6 +382,7 @@ body {
   line-height: 117%;
   margin: 29px 103px 24px 103px;
   border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -523,14 +532,13 @@ body {
     flex-direction: column;
     height: 90%;
     gap: 1.2em;
-    max-width: 55%;
+    max-width: 60em;
   }
 
   .details-popup {
     max-width: 95%;
     align-self: flex-start;
     margin-left: 1.2em;
-    margin-top: -1.5em;
   }
 
   .close-popup {
@@ -547,6 +555,7 @@ body {
     position: static;
     text-align: right;
     font-size: 30px;
+    cursor: pointer;
   }
 
   .mobile-popup img {
@@ -570,7 +579,8 @@ body {
 
   .main-popup {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     min-width: 10%;
     padding-inline: 1.5em;
   }

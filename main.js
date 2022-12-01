@@ -237,6 +237,26 @@ window.addEventListener('DOMContentLoaded', () => {
     div1Div2.className = 'btn-container-desktop';
     mainDiv1.appendChild(div1Div2);
 
+    const btnDesktopSee = document.createElement('a');
+    btnDesktopSee.id = 'btn-1';
+    btnDesktopSee.className = 'button btn-popup';
+    btnDesktopSee.innerHTML = 'See live     ';
+    div1Div2.appendChild(btnDesktopSee);
+
+    const desktopArrow = document.createElement('i');
+    desktopArrow.className = 'fa-solid fa-arrow-up-right-from-square';
+    btnDesktopSee.appendChild(desktopArrow);
+
+    const btnDesktopSource = document.createElement('a');
+    btnDesktopSource.id = 'btn-2';
+    btnDesktopSource.className = 'button btn-popup';
+    btnDesktopSource.innerHTML = 'See source     ';
+    div1Div2.appendChild(btnDesktopSource);
+
+    const desktopGit = document.createElement('i');
+    desktopGit.className = 'fa-brands fa-github';
+    btnDesktopSource.appendChild(desktopGit);
+
     const mainDiv2 = document.createElement('div');
     mainDiv2.className = 'details-popup divPop';
     main.appendChild(mainDiv2);
@@ -296,6 +316,10 @@ window.addEventListener('DOMContentLoaded', () => {
     div3A2.className = 'button btn-popup';
     div3A2.innerHTML = 'See source     ';
     mainDiv3.appendChild(div3A2);
+
+    const mobileGit = document.createElement('i');
+    mobileGit.className = 'fa-brands fa-github';
+    div3A2.appendChild(mobileGit);
   }
   window.onload = Addnew();
   const sectionContainer = document.getElementById('mobile-popup-section');
